@@ -350,7 +350,15 @@ fs.readFileSync(
 }
 
 const firstRun =
-!savedDates;
+
+!savedDates
+
+||
+
+!fs.existsSync(
+"regional-mea.json"
+);
+
 
 if (
 
