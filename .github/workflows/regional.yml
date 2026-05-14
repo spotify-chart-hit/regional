@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -23,7 +25,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run regional scraper
+      - name: Run scraper
         run: node regional-americas.js
 
       - name: Commit JSON
@@ -35,10 +37,33 @@ jobs:
 
           git diff --cached --quiet || git commit -m "update americas"
 
-          until git push; do
-            echo "Push conflict 😭 waiting..."
-            sleep 20
-            git pull --rebase origin main
+          success=false
+
+          until [ "$success" = true ]; do
+
+            git fetch origin
+
+            LOCAL=$(git rev-parse HEAD)
+            REMOTE=$(git rev-parse origin/main)
+
+            if [ "$LOCAL" = "$REMOTE" ]; then
+
+              echo "Safe to push 😍"
+
+              if git push; then
+                success=true
+              fi
+
+            else
+
+              echo "Someone pushed first 😭 waiting..."
+
+              git pull --rebase origin main
+
+              sleep 20
+
+            fi
+
           done
 
   europe:
@@ -47,6 +72,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -56,7 +83,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run regional scraper
+      - name: Run scraper
         run: node regional-europe.js
 
       - name: Commit JSON
@@ -68,10 +95,33 @@ jobs:
 
           git diff --cached --quiet || git commit -m "update europe"
 
-          until git push; do
-            echo "Push conflict 😭 waiting..."
-            sleep 20
-            git pull --rebase origin main
+          success=false
+
+          until [ "$success" = true ]; do
+
+            git fetch origin
+
+            LOCAL=$(git rev-parse HEAD)
+            REMOTE=$(git rev-parse origin/main)
+
+            if [ "$LOCAL" = "$REMOTE" ]; then
+
+              echo "Safe to push 😍"
+
+              if git push; then
+                success=true
+              fi
+
+            else
+
+              echo "Someone pushed first 😭 waiting..."
+
+              git pull --rebase origin main
+
+              sleep 20
+
+            fi
+
           done
 
   asia:
@@ -80,6 +130,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -89,7 +141,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run regional scraper
+      - name: Run scraper
         run: node regional-asia.js
 
       - name: Commit JSON
@@ -101,10 +153,33 @@ jobs:
 
           git diff --cached --quiet || git commit -m "update asia"
 
-          until git push; do
-            echo "Push conflict 😭 waiting..."
-            sleep 20
-            git pull --rebase origin main
+          success=false
+
+          until [ "$success" = true ]; do
+
+            git fetch origin
+
+            LOCAL=$(git rev-parse HEAD)
+            REMOTE=$(git rev-parse origin/main)
+
+            if [ "$LOCAL" = "$REMOTE" ]; then
+
+              echo "Safe to push 😍"
+
+              if git push; then
+                success=true
+              fi
+
+            else
+
+              echo "Someone pushed first 😭 waiting..."
+
+              git pull --rebase origin main
+
+              sleep 20
+
+            fi
+
           done
 
   mea:
@@ -113,6 +188,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -122,7 +199,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run regional scraper
+      - name: Run scraper
         run: node regional-mea.js
 
       - name: Commit JSON
@@ -134,8 +211,31 @@ jobs:
 
           git diff --cached --quiet || git commit -m "update mea"
 
-          until git push; do
-            echo "Push conflict 😭 waiting..."
-            sleep 20
-            git pull --rebase origin main
+          success=false
+
+          until [ "$success" = true ]; do
+
+            git fetch origin
+
+            LOCAL=$(git rev-parse HEAD)
+            REMOTE=$(git rev-parse origin/main)
+
+            if [ "$LOCAL" = "$REMOTE" ]; then
+
+              echo "Safe to push 😍"
+
+              if git push; then
+                success=true
+              fi
+
+            else
+
+              echo "Someone pushed first 😭 waiting..."
+
+              git pull --rebase origin main
+
+              sleep 20
+
+            fi
+
           done
