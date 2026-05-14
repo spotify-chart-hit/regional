@@ -28,14 +28,10 @@ await fetch(
 "https://charts-spotify-com-service.spotify.com/auth/v0/charts/regional-global-daily/latest",
 
 {
-
 headers: {
-
 Authorization:
 token
-
 }
-
 }
 
 );
@@ -46,14 +42,10 @@ await fetch(
 "https://charts-spotify-com-service.spotify.com/auth/v0/charts/regional-global-weekly/latest",
 
 {
-
 headers: {
-
 Authorization:
 token
-
 }
-
 }
 
 );
@@ -81,7 +73,7 @@ token
 ) {
 
 console.log(
-"\nSCRAPING ASIA 😭🔥\n"
+"SCRAPING ASIA 😭🔥"
 );
 
 let results = [];
@@ -121,7 +113,6 @@ headers: {
 
 Authorization:
 token,
-
 Accept:
 "application/json"
 
@@ -138,6 +129,10 @@ response.status ===
 
 ) {
 
+console.log(
+`429 😭 ${country} ${type}`
+);
+
 await sleep(
 8000
 );
@@ -153,7 +148,6 @@ headers: {
 
 Authorization:
 token,
-
 Accept:
 "application/json"
 
@@ -214,6 +208,7 @@ artist.name
 ?.toLowerCase()
 
 ===
+
 "jimin"
 
 );
@@ -234,6 +229,27 @@ rank:
 track.chartEntryData
 ?.currentRank,
 
+previousRank:
+
+track.chartEntryData
+?.previousRank,
+
+peakRank:
+
+track.chartEntryData
+?.peakRank,
+
+appearances:
+
+track.chartEntryData
+?.appearancesOnChart,
+
+streams:
+
+track.chartEntryData
+?.rankingMetric
+?.value,
+
 track:
 
 track.trackMetadata
@@ -243,7 +259,12 @@ artists:
 
 artists.map(
 a => a.name
-)
+),
+
+image:
+
+track.trackMetadata
+?.displayImageUri
 
 });
 
@@ -291,6 +312,10 @@ null,
 
 );
 
+console.log(
+"UPDATED regional-asia.json 😍"
+);
+
 }
 
 async function start() {
@@ -298,7 +323,13 @@ async function start() {
 const token =
 await getToken();
 
-let savedDates = {};
+const latest =
+await getLatestDates(
+token
+);
+
+let savedDates =
+null;
 
 if (
 
@@ -319,23 +350,18 @@ fs.readFileSync(
 
 }
 
-const latest =
-await getLatestDates(
-token
-);
-
 const firstRun =
-
-!savedDates.daily
-||
-
-!savedDates.weekly;
+!savedDates;
 
 if (
 
 firstRun
 
 ) {
+
+console.log(
+"FIRST RUN 😍"
+);
 
 await scrape(
 token
@@ -353,26 +379,18 @@ null,
 
 );
 
-savedDates =
-latest;
+return;
 
 }
 
-while (true) {
-
-const current =
-await getLatestDates(
-token
-);
-
 const changed =
 
-current.daily !==
+latest.daily !==
 savedDates.daily
 
 ||
 
-current.weekly !==
+latest.weekly !==
 savedDates.weekly;
 
 if (
@@ -380,6 +398,10 @@ if (
 changed
 
 ) {
+
+console.log(
+"NEW CHART 😍"
+);
 
 await scrape(
 token
@@ -390,20 +412,19 @@ fs.writeFileSync(
 "chart-dates-asia.json",
 
 JSON.stringify(
-current,
+latest,
 null,
 2
 )
 
 );
 
-savedDates =
-current;
-
 }
 
-await sleep(
-5 * 60 * 1000
+else {
+
+console.log(
+"SAME CHART 😴"
 );
 
 }
@@ -411,4 +432,3 @@ await sleep(
 }
 
 start();
-
