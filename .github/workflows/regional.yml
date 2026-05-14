@@ -2,6 +2,7 @@ name: Regional Charts
 
 on:
   workflow_dispatch:
+
   schedule:
     - cron: "*/5 * * * *"
 
@@ -10,21 +11,23 @@ jobs:
   americas:
     runs-on: ubuntu-latest
 
-    concurrency:
-      group: regional-push
-      cancel-in-progress: false
-
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - run: npm install
-      - run: npx playwright install chromium
+      - name: Install dependencies
+        run: npm install
 
-      - run: node regional-americas.js
+      - name: Install Playwright
+        run: npx playwright install chromium
+
+      - name: Run regional scraper
+        run: node regional-americas.js
 
       - name: Commit JSON
         run: |
@@ -35,27 +38,32 @@ jobs:
 
           git diff --cached --quiet || git commit -m "update americas"
 
-          git pull --rebase origin main
-          git push
+          until git push; do
+            echo "Push conflict 😭"
+            git pull --rebase origin main
+            sleep 5
+          done
 
   europe:
     runs-on: ubuntu-latest
 
-    concurrency:
-      group: regional-push
-      cancel-in-progress: false
-
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - run: npm install
-      - run: npx playwright install chromium
+      - name: Install dependencies
+        run: npm install
 
-      - run: node regional-europe.js
+      - name: Install Playwright
+        run: npx playwright install chromium
+
+      - name: Run regional scraper
+        run: node regional-europe.js
 
       - name: Commit JSON
         run: |
@@ -66,27 +74,32 @@ jobs:
 
           git diff --cached --quiet || git commit -m "update europe"
 
-          git pull --rebase origin main
-          git push
+          until git push; do
+            echo "Push conflict 😭"
+            git pull --rebase origin main
+            sleep 5
+          done
 
   asia:
     runs-on: ubuntu-latest
 
-    concurrency:
-      group: regional-push
-      cancel-in-progress: false
-
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - run: npm install
-      - run: npx playwright install chromium
+      - name: Install dependencies
+        run: npm install
 
-      - run: node regional-asia.js
+      - name: Install Playwright
+        run: npx playwright install chromium
+
+      - name: Run regional scraper
+        run: node regional-asia.js
 
       - name: Commit JSON
         run: |
@@ -97,27 +110,32 @@ jobs:
 
           git diff --cached --quiet || git commit -m "update asia"
 
-          git pull --rebase origin main
-          git push
+          until git push; do
+            echo "Push conflict 😭"
+            git pull --rebase origin main
+            sleep 5
+          done
 
   mea:
     runs-on: ubuntu-latest
 
-    concurrency:
-      group: regional-push
-      cancel-in-progress: false
-
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - run: npm install
-      - run: npx playwright install chromium
+      - name: Install dependencies
+        run: npm install
 
-      - run: node regional-mea.js
+      - name: Install Playwright
+        run: npx playwright install chromium
+
+      - name: Run regional scraper
+        run: node regional-mea.js
 
       - name: Commit JSON
         run: |
@@ -128,5 +146,8 @@ jobs:
 
           git diff --cached --quiet || git commit -m "update mea"
 
-          git pull --rebase origin main
-          git push
+          until git push; do
+            echo "Push conflict 😭"
+            git pull --rebase origin main
+            sleep 5
+          donea
