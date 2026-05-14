@@ -27,14 +27,10 @@ await fetch(
 "https://charts-spotify-com-service.spotify.com/auth/v0/charts/regional-global-daily/latest",
 
 {
-
 headers: {
-
 Authorization:
 token
-
 }
-
 }
 
 );
@@ -45,14 +41,10 @@ await fetch(
 "https://charts-spotify-com-service.spotify.com/auth/v0/charts/regional-global-weekly/latest",
 
 {
-
 headers: {
-
 Authorization:
 token
-
 }
-
 }
 
 );
@@ -80,7 +72,7 @@ token
 ) {
 
 console.log(
-"\nSCRAPING MEA 😭🔥\n"
+"SCRAPING MEA 😭🔥"
 );
 
 let results = [];
@@ -120,7 +112,6 @@ headers: {
 
 Authorization:
 token,
-
 Accept:
 "application/json"
 
@@ -156,7 +147,6 @@ headers: {
 
 Authorization:
 token,
-
 Accept:
 "application/json"
 
@@ -279,7 +269,7 @@ track.trackMetadata
 
 console.log(
 
-`FOUND 😭🔥 ${country} ${type} ${track.trackMetadata?.trackName}`
+`FOUND 😭🔥 ${country} ${track.trackMetadata?.trackName}`
 
 );
 
@@ -332,7 +322,13 @@ async function start() {
 const token =
 await getToken();
 
-let savedDates = {};
+const latest =
+await getLatestDates(
+token
+);
+
+let savedDates =
+null;
 
 if (
 
@@ -353,17 +349,8 @@ fs.readFileSync(
 
 }
 
-const latest =
-await getLatestDates(
-token
-);
-
 const firstRun =
-
-!savedDates.daily
-||
-
-!savedDates.weekly;
+!savedDates;
 
 if (
 
@@ -391,32 +378,18 @@ null,
 
 );
 
-savedDates =
-latest;
+return;
 
 }
 
-while (true) {
-
-try {
-
-console.log(
-"CHECKING UPDATE 😭🔥"
-);
-
-const current =
-await getLatestDates(
-token
-);
-
 const changed =
 
-current.daily !==
+latest.daily !==
 savedDates.daily
 
 ||
 
-current.weekly !==
+latest.weekly !==
 savedDates.weekly;
 
 if (
@@ -438,15 +411,12 @@ fs.writeFileSync(
 "chart-dates-mea.json",
 
 JSON.stringify(
-current,
+latest,
 null,
 2
 )
 
 );
-
-savedDates =
-current;
 
 }
 
@@ -460,25 +430,4 @@ console.log(
 
 }
 
-catch (
-
-err
-
-) {
-
-console.log(
-err.message
-);
-
-}
-
-await sleep(
-5 * 60 * 1000
-);
-
-}
-
-}
-
 start();
-
