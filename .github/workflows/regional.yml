@@ -38,13 +38,11 @@ jobs:
 
           git diff --cached --quiet || git commit -m "update americas"
 
-          until git push; do
-            echo "Push conflict 😭"
-            git pull --rebase origin main
-            sleep 5
-          done
+          git pull --rebase origin main
+          git push
 
   europe:
+    needs: americas
     runs-on: ubuntu-latest
 
     steps:
@@ -74,13 +72,11 @@ jobs:
 
           git diff --cached --quiet || git commit -m "update europe"
 
-          until git push; do
-            echo "Push conflict 😭"
-            git pull --rebase origin main
-            sleep 5
-          done
+          git pull --rebase origin main
+          git push
 
   asia:
+    needs: europe
     runs-on: ubuntu-latest
 
     steps:
@@ -110,13 +106,11 @@ jobs:
 
           git diff --cached --quiet || git commit -m "update asia"
 
-          until git push; do
-            echo "Push conflict 😭"
-            git pull --rebase origin main
-            sleep 5
-          done
+          git pull --rebase origin main
+          git push
 
   mea:
+    needs: asia
     runs-on: ubuntu-latest
 
     steps:
@@ -146,8 +140,5 @@ jobs:
 
           git diff --cached --quiet || git commit -m "update mea"
 
-          until git push; do
-            echo "Push conflict 😭"
-            git pull --rebase origin main
-            sleep 5
-          donea
+          git pull --rebase origin main
+          git push
