@@ -1,1 +1,15 @@
+{
+  "name": "regional",
+  "version": "1.0.0",
+  "main": "regional-americas.js",
+  "scripts": {
+    "americas": "node regional-americas.js",
+    "europe": "node regional-europe.js",
+    "asia": "node regional-asia.js",
+    "mea": "node regional-mea.js"
+  },
+  "dependencies": {
+    "playwright": "^1.52.0"
+  }
+}
 
