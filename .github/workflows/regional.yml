@@ -165,9 +165,6 @@ jobs:
       - name: Run MEA
         run: node regional-mea.js
 
-      - name: Merge Regional
-        run: node merge-regional.js
-
       - name: Commit MEA
         run: |
           git config user.name "github-actions[bot]"
@@ -176,7 +173,43 @@ jobs:
           git add .
 
           if ! git diff --cached --quiet; then
-            git commit -m "update mea + regional"
+            git commit -m "update mea"
+
+            until git push; do
+              echo "Retry push 😭"
+              git pull --rebase origin main
+              sleep 3
+            done
+          fi
+
+  merge:
+    needs: mea
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run Merge
+        run: node merge-regional.js
+
+      - name: Commit Regional
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add regional.json
+
+          if ! git diff --cached --quiet; then
+            git commit -m "update regional"
 
             until git push; do
               echo "Retry push 😭"
