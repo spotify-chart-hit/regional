@@ -7,12 +7,13 @@ setTimeout(resolve, ms)
 );
 
 const countries = [
+
 "GLOBAL",
-"US","CA","MX","BR","AR",
-"CL","CO","CR","DO","EC",
-"GT","HN","NI","PA","PY",
-"PE","UY","VE","BO","SV"
+
+"AR", "BO", "BR", "CA", "CL", "CO", "CR", "DO", "EC", "SV", "GT", "HN", "MX", "NI", "PA", "PY", "PE", "UY", "US", "VE"
+
 ];
+
 
 async function getLatestDates(
 token
