@@ -10,6 +10,8 @@ headless: true
 
 });
 
+try {
+
 const context =
 await browser.newContext({
 
@@ -60,15 +62,20 @@ token = auth;
 
 await page.goto(
 
-"https://charts.spotify.com/charts/view/regional-global-weekly/latest"
+"https://charts.spotify.com/charts/view/regional-global-weekly/latest",
+
+{
+
+waitUntil:
+"networkidle"
+
+}
 
 );
 
 await page.waitForTimeout(
-5000
+3000
 );
-
-await browser.close();
 
 if (!token) {
 
@@ -82,6 +89,13 @@ return token;
 
 }
 
+finally {
+
+await browser.close();
+
+}
+
+}
+
 module.exports =
 getToken;
-
