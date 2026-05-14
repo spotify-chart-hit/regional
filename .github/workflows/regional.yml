@@ -165,6 +165,9 @@ jobs:
       - name: Run MEA
         run: node regional-mea.js
 
+      - name: Merge Regional
+        run: node merge-regional.js
+
       - name: Commit MEA
         run: |
           git config user.name "github-actions[bot]"
@@ -173,7 +176,7 @@ jobs:
           git add .
 
           if ! git diff --cached --quiet; then
-            git commit -m "update mea"
+            git commit -m "update mea + regional"
 
             until git push; do
               echo "Retry push 😭"
