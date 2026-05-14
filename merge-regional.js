@@ -13,12 +13,28 @@ for (const file of files) {
 
   if (fs.existsSync(file)) {
 
-    const data = JSON.parse(
-      fs.readFileSync(file, "utf8")
-    );
+    try {
 
-    merged.push(...data);
+      const data = JSON.parse(
+        fs.readFileSync(file, "utf8")
+      );
+
+      if (Array.isArray(data)) {
+        merged.push(...data);
+      }
+
+    }
+
+    catch (err) {
+
+      console.log(
+        `Failed ${file} 😭`
+      );
+
+    }
+
   }
+
 }
 
 merged.sort((a, b) => {
