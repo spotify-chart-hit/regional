@@ -2,34 +2,18 @@ name: Regional Charts
 
 on:
   workflow_dispatch:
+
   schedule:
     - cron: "*/5 * * * *"
 
-permissions:
-  contents: write
-
 jobs:
-  regional:
 
-    runs-on:
-      ubuntu-latest
-
-    strategy:
-      fail-fast: false
-
-      matrix:
-        region:
-          - americas
-          - europe
-          - asia
-          - mea
+  americas:
+    runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout repo
         uses: actions/checkout@v4
-        with:
-          persist-credentials: true
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -39,19 +23,111 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Install Playwright
-        run: npx playwright install --with-deps chromium
-
       - name: Run regional scraper
-        run: node regional-${{ matrix.region }}.js
+        run: node regional-americas.js
 
       - name: Commit JSON
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add *.json
+          git add .
 
-          git diff --cached --quiet || git commit -m "update regional ${{ matrix.region }}"
+          git diff --cached --quiet || git commit -m "update americas"
+
+          git pull --rebase origin main
+
+          git push
+
+  europe:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run regional scraper
+        run: node regional-europe.js
+
+      - name: Commit JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add .
+
+          git diff --cached --quiet || git commit -m "update europe"
+
+          git pull --rebase origin main
+
+          git push
+
+  asia:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run regional scraper
+        run: node regional-asia.js
+
+      - name: Commit JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add .
+
+          git diff --cached --quiet || git commit -m "update asia"
+
+          git pull --rebase origin main
+
+          git push
+
+  mea:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run regional scraper
+        run: node regional-mea.js
+
+      - name: Commit JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add .
+
+          git diff --cached --quiet || git commit -m "update mea"
+
+          git pull --rebase origin main
 
           git push
