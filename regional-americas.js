@@ -359,7 +359,15 @@ fs.readFileSync(
 }
 
 const firstRun =
-!savedDates;
+
+!savedDates
+
+||
+
+!fs.existsSync(
+"regional-americas.json"
+);
+
 
 if (
 
