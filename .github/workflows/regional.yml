@@ -18,6 +18,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -30,20 +32,25 @@ jobs:
       - name: Install Playwright
         run: npx playwright install chromium
 
-      - name: Run regional scraper
+      - name: Run Americas
         run: node regional-americas.js
 
-      - name: Commit JSON
+      - name: Commit Americas
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add .
 
-          git diff --cached --quiet || git commit -m "update americas"
+          if ! git diff --cached --quiet; then
+            git commit -m "update americas"
 
-          git pull --rebase origin main
-          git push
+            until git push; do
+              echo "Retry push 😭"
+              git pull --rebase origin main
+              sleep 3
+            done
+          fi
 
   europe:
     needs: americas
@@ -52,6 +59,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -64,20 +73,25 @@ jobs:
       - name: Install Playwright
         run: npx playwright install chromium
 
-      - name: Run regional scraper
+      - name: Run Europe
         run: node regional-europe.js
 
-      - name: Commit JSON
+      - name: Commit Europe
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add .
 
-          git diff --cached --quiet || git commit -m "update europe"
+          if ! git diff --cached --quiet; then
+            git commit -m "update europe"
 
-          git pull --rebase origin main
-          git push
+            until git push; do
+              echo "Retry push 😭"
+              git pull --rebase origin main
+              sleep 3
+            done
+          fi
 
   asia:
     needs: europe
@@ -86,6 +100,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -98,20 +114,25 @@ jobs:
       - name: Install Playwright
         run: npx playwright install chromium
 
-      - name: Run regional scraper
+      - name: Run Asia
         run: node regional-asia.js
 
-      - name: Commit JSON
+      - name: Commit Asia
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add .
 
-          git diff --cached --quiet || git commit -m "update asia"
+          if ! git diff --cached --quiet; then
+            git commit -m "update asia"
 
-          git pull --rebase origin main
-          git push
+            until git push; do
+              echo "Retry push 😭"
+              git pull --rebase origin main
+              sleep 3
+            done
+          fi
 
   mea:
     needs: asia
@@ -120,6 +141,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -132,17 +155,22 @@ jobs:
       - name: Install Playwright
         run: npx playwright install chromium
 
-      - name: Run regional scraper
+      - name: Run MEA
         run: node regional-mea.js
 
-      - name: Commit JSON
+      - name: Commit MEA
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add .
 
-          git diff --cached --quiet || git commit -m "update mea"
+          if ! git diff --cached --quiet; then
+            git commit -m "update mea"
 
-          git pull --rebase origin main
-          git push
+            until git push; do
+              echo "Retry push 😭"
+              git pull --rebase origin main
+              sleep 3
+            done
+          fi
