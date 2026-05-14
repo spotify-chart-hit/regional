@@ -14,8 +14,6 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -25,7 +23,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run scraper
+      - name: Install Playwright
+        run: npx playwright install chromium
+
+      - name: Run regional scraper
         run: node regional-americas.js
 
       - name: Commit JSON
@@ -37,33 +38,10 @@ jobs:
 
           git diff --cached --quiet || git commit -m "update americas"
 
-          success=false
-
-          until [ "$success" = true ]; do
-
-            git fetch origin
-
-            LOCAL=$(git rev-parse HEAD)
-            REMOTE=$(git rev-parse origin/main)
-
-            if [ "$LOCAL" = "$REMOTE" ]; then
-
-              echo "Safe to push 😍"
-
-              if git push; then
-                success=true
-              fi
-
-            else
-
-              echo "Someone pushed first 😭 waiting..."
-
-              git pull --rebase origin main
-
-              sleep 20
-
-            fi
-
+          until git push; do
+            echo "Push conflict 😭 retry..."
+            sleep 20
+            git pull --rebase origin main
           done
 
   europe:
@@ -72,8 +50,6 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -83,7 +59,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run scraper
+      - name: Install Playwright
+        run: npx playwright install chromium
+
+      - name: Run regional scraper
         run: node regional-europe.js
 
       - name: Commit JSON
@@ -95,33 +74,10 @@ jobs:
 
           git diff --cached --quiet || git commit -m "update europe"
 
-          success=false
-
-          until [ "$success" = true ]; do
-
-            git fetch origin
-
-            LOCAL=$(git rev-parse HEAD)
-            REMOTE=$(git rev-parse origin/main)
-
-            if [ "$LOCAL" = "$REMOTE" ]; then
-
-              echo "Safe to push 😍"
-
-              if git push; then
-                success=true
-              fi
-
-            else
-
-              echo "Someone pushed first 😭 waiting..."
-
-              git pull --rebase origin main
-
-              sleep 20
-
-            fi
-
+          until git push; do
+            echo "Push conflict 😭 retry..."
+            sleep 20
+            git pull --rebase origin main
           done
 
   asia:
@@ -130,8 +86,6 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -141,7 +95,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run scraper
+      - name: Install Playwright
+        run: npx playwright install chromium
+
+      - name: Run regional scraper
         run: node regional-asia.js
 
       - name: Commit JSON
@@ -153,33 +110,10 @@ jobs:
 
           git diff --cached --quiet || git commit -m "update asia"
 
-          success=false
-
-          until [ "$success" = true ]; do
-
-            git fetch origin
-
-            LOCAL=$(git rev-parse HEAD)
-            REMOTE=$(git rev-parse origin/main)
-
-            if [ "$LOCAL" = "$REMOTE" ]; then
-
-              echo "Safe to push 😍"
-
-              if git push; then
-                success=true
-              fi
-
-            else
-
-              echo "Someone pushed first 😭 waiting..."
-
-              git pull --rebase origin main
-
-              sleep 20
-
-            fi
-
+          until git push; do
+            echo "Push conflict 😭 retry..."
+            sleep 20
+            git pull --rebase origin main
           done
 
   mea:
@@ -188,8 +122,6 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -199,7 +131,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run scraper
+      - name: Install Playwright
+        run: npx playwright install chromium
+
+      - name: Run regional scraper
         run: node regional-mea.js
 
       - name: Commit JSON
@@ -211,31 +146,8 @@ jobs:
 
           git diff --cached --quiet || git commit -m "update mea"
 
-          success=false
-
-          until [ "$success" = true ]; do
-
-            git fetch origin
-
-            LOCAL=$(git rev-parse HEAD)
-            REMOTE=$(git rev-parse origin/main)
-
-            if [ "$LOCAL" = "$REMOTE" ]; then
-
-              echo "Safe to push 😍"
-
-              if git push; then
-                success=true
-              fi
-
-            else
-
-              echo "Someone pushed first 😭 waiting..."
-
-              git pull --rebase origin main
-
-              sleep 20
-
-            fi
-
+          until git push; do
+            echo "Push conflict 😭 retry..."
+            sleep 20
+            git pull --rebase origin main
           done
