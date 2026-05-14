@@ -12,14 +12,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - run: npm install
-      - run: node regional-americas.js
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run regional scraper
+        run: node regional-americas.js
 
       - name: Commit JSON
         run: |
@@ -30,21 +35,29 @@ jobs:
 
           git diff --cached --quiet || git commit -m "update americas"
 
-          git pull origin main --rebase
-          git push
+          until git push; do
+            echo "Push conflict 😭 waiting..."
+            sleep 20
+            git pull --rebase origin main
+          done
 
   europe:
-    needs: americas
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - run: npm install
-      - run: node regional-europe.js
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run regional scraper
+        run: node regional-europe.js
 
       - name: Commit JSON
         run: |
@@ -55,21 +68,29 @@ jobs:
 
           git diff --cached --quiet || git commit -m "update europe"
 
-          git pull origin main --rebase
-          git push
+          until git push; do
+            echo "Push conflict 😭 waiting..."
+            sleep 20
+            git pull --rebase origin main
+          done
 
   asia:
-    needs: europe
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - run: npm install
-      - run: node regional-asia.js
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run regional scraper
+        run: node regional-asia.js
 
       - name: Commit JSON
         run: |
@@ -80,21 +101,29 @@ jobs:
 
           git diff --cached --quiet || git commit -m "update asia"
 
-          git pull origin main --rebase
-          git push
+          until git push; do
+            echo "Push conflict 😭 waiting..."
+            sleep 20
+            git pull --rebase origin main
+          done
 
   mea:
-    needs: asia
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - run: npm install
-      - run: node regional-mea.js
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run regional scraper
+        run: node regional-mea.js
 
       - name: Commit JSON
         run: |
@@ -105,5 +134,8 @@ jobs:
 
           git diff --cached --quiet || git commit -m "update mea"
 
-          git pull origin main --rebase
-          git push
+          until git push; do
+            echo "Push conflict 😭 waiting..."
+            sleep 20
+            git pull --rebase origin main
+          done
