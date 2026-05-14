@@ -12,142 +12,151 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - name: Install dependencies
-        run: npm install
+      - run: npm install
+      - run: npx playwright install chromium
 
-      - name: Install Playwright
-        run: npx playwright install chromium
+      - run: node regional-americas.js
 
-      - name: Run regional scraper
-        run: node regional-americas.js
+      - name: Upload Americas
+        uses: actions/upload-artifact@v4
+        with:
+          name: americas
+          path: |
+            regional-americas.json
+            chart-dates-americas.json
 
-      - name: Commit JSON
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add .
-
-          git diff --cached --quiet || git commit -m "update americas"
-
-          until git push; do
-            echo "Push conflict 😭 retry..."
-            sleep 20
-            git pull --rebase origin main
-          done
 
   europe:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - name: Install dependencies
-        run: npm install
+      - run: npm install
+      - run: npx playwright install chromium
 
-      - name: Install Playwright
-        run: npx playwright install chromium
+      - run: node regional-europe.js
 
-      - name: Run regional scraper
-        run: node regional-europe.js
+      - name: Upload Europe
+        uses: actions/upload-artifact@v4
+        with:
+          name: europe
+          path: |
+            regional-europe.json
+            chart-dates-europe.json
 
-      - name: Commit JSON
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add .
-
-          git diff --cached --quiet || git commit -m "update europe"
-
-          until git push; do
-            echo "Push conflict 😭 retry..."
-            sleep 20
-            git pull --rebase origin main
-          done
 
   asia:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - name: Install dependencies
-        run: npm install
+      - run: npm install
+      - run: npx playwright install chromium
 
-      - name: Install Playwright
-        run: npx playwright install chromium
+      - run: node regional-asia.js
 
-      - name: Run regional scraper
-        run: node regional-asia.js
+      - name: Upload Asia
+        uses: actions/upload-artifact@v4
+        with:
+          name: asia
+          path: |
+            regional-asia.json
+            chart-dates-asia.json
 
-      - name: Commit JSON
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add .
-
-          git diff --cached --quiet || git commit -m "update asia"
-
-          until git push; do
-            echo "Push conflict 😭 retry..."
-            sleep 20
-            git pull --rebase origin main
-          done
 
   mea:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - name: Install dependencies
-        run: npm install
+      - run: npm install
+      - run: npx playwright install chromium
 
-      - name: Install Playwright
-        run: npx playwright install chromium
+      - run: node regional-mea.js
 
-      - name: Run regional scraper
-        run: node regional-mea.js
+      - name: Upload MEA
+        uses: actions/upload-artifact@v4
+        with:
+          name: mea
+          path: |
+            regional-mea.json
+            chart-dates-mea.json
 
-      - name: Commit JSON
+
+  commit:
+    needs:
+      - americas
+      - europe
+      - asia
+      - mea
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download Americas
+        uses: actions/download-artifact@v4
+        with:
+          name: americas
+
+      - name: Download Europe
+        uses: actions/download-artifact@v4
+        with:
+          name: europe
+
+      - name: Download Asia
+        uses: actions/download-artifact@v4
+        with:
+          name: asia
+
+      - name: Download MEA
+        uses: actions/download-artifact@v4
+        with:
+          name: mea
+
+      - name: Move files
+        run: |
+          mv regional-americas.json .
+          mv chart-dates-americas.json .
+
+          mv regional-europe.json .
+          mv chart-dates-europe.json .
+
+          mv regional-asia.json .
+          mv chart-dates-asia.json .
+
+          mv regional-mea.json .
+          mv chart-dates-mea.json .
+
+      - name: Commit & Push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add .
 
-          git diff --cached --quiet || git commit -m "update mea"
+          git diff --cached --quiet || git commit -m "update regional"
 
-          until git push; do
-            echo "Push conflict 😭 retry..."
-            sleep 20
-            git pull --rebase origin main
-          done
+          git push
