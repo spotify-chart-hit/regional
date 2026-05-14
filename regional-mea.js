@@ -1,53 +1,74 @@
-const fs =
-require("fs");
-
-const getToken =
-require("./auto-token");
+const fs = require("fs");
+const getToken = require("./auto-token");
 
 const sleep = ms =>
-new Promise(
-resolve =>
+new Promise(resolve =>
 setTimeout(resolve, ms)
 );
 
 const countries = [
-
 "AE","SA","IL","TR","EG",
 "MA","NG","ZA","CY","BY"
-
 ];
 
 async function getLatestDates(
 token
 ) {
 
-const daily =
+let daily;
+let weekly;
+
+while (true) {
+
+daily =
 await fetch(
 
 "https://charts-spotify-com-service.spotify.com/auth/v0/charts/regional-global-daily/latest",
 
 {
 headers: {
-Authorization:
-token
+Authorization: token
 }
 }
 
 );
 
-const weekly =
+weekly =
 await fetch(
 
 "https://charts-spotify-com-service.spotify.com/auth/v0/charts/regional-global-weekly/latest",
 
 {
 headers: {
-Authorization:
-token
+Authorization: token
 }
 }
 
 );
+
+if (
+
+daily.status === 429
+||
+weekly.status === 429
+
+) {
+
+console.log(
+"429 latestDate 😭"
+);
+
+await sleep(
+8000
+);
+
+continue;
+
+}
+
+break;
+
+}
 
 const dailyJson =
 await daily.json();
@@ -56,13 +77,11 @@ const weeklyJson =
 await weekly.json();
 
 return {
-
 daily:
 dailyJson.latestDate,
 
 weekly:
 weeklyJson.latestDate
-
 };
 
 }
@@ -107,16 +126,11 @@ await fetch(
 url,
 
 {
-
 headers: {
-
-Authorization:
-token,
+Authorization: token,
 Accept:
 "application/json"
-
 }
-
 }
 
 );
@@ -142,16 +156,11 @@ await fetch(
 url,
 
 {
-
 headers: {
-
-Authorization:
-token,
+Authorization: token,
 Accept:
 "application/json"
-
 }
-
 }
 
 );
@@ -173,13 +182,10 @@ const data =
 await response.json();
 
 const tracks =
-
 data.entries
 ||
-
 data.chartEntryViewResponses
 ||
-
 [];
 
 for (
@@ -194,7 +200,6 @@ const artists =
 track.trackMetadata
 ?.artists
 ||
-
 [];
 
 const hasJimin =
@@ -206,9 +211,7 @@ artist =>
 artist.name
 ?.toLowerCase()
 
-===
-
-"jimin"
+=== "jimin"
 
 );
 
@@ -283,11 +286,7 @@ await sleep(
 
 }
 
-catch (
-
-err
-
-) {
+catch (err) {
 
 console.log(
 err.message
@@ -322,11 +321,6 @@ async function start() {
 const token =
 await getToken();
 
-const latest =
-await getLatestDates(
-token
-);
-
 let savedDates =
 null;
 
@@ -349,16 +343,19 @@ fs.readFileSync(
 
 }
 
+const latest =
+await getLatestDates(
+token
+);
+
 const firstRun =
 
 !savedDates
-
 ||
 
 !fs.existsSync(
 "regional-mea.json"
 );
-
 
 if (
 
@@ -394,7 +391,6 @@ const changed =
 
 latest.daily !==
 savedDates.daily
-
 ||
 
 latest.weekly !==
