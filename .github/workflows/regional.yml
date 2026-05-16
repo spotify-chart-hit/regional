@@ -198,7 +198,7 @@ jobs:
         with:
           node-version: 20
 
-        name: Pull latest files
+          - name: Pull latest files
         run: |
           git pull origin main
           sleep 5
