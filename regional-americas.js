@@ -7,64 +7,48 @@ setTimeout(resolve, ms)
 );
 
 const countries = [
-
 "GLOBAL",
-
-"AR", "BO", "BR", "CA", "CL", "CO", "CR", "DO", "EC", "SV", "GT", "HN", "MX", "NI", "PA", "PY", "PE", "UY", "US", "VE"
-
+"AR","BO","BR","CA","CL","CO","CR","DO","EC","SV","GT","HN","MX","NI","PA","PY","PE","UY","US","VE"
 ];
 
-
-async function getLatestDates(
-token
-) {
+async function getLatestDates(token){
 
 let daily;
 let weekly;
 
-while (true) {
+while(true){
 
 daily =
 await fetch(
-
 "https://charts-spotify-com-service.spotify.com/auth/v0/charts/regional-global-daily/latest",
-
 {
-headers: {
+headers:{
 Authorization: token
 }
 }
-
 );
 
 weekly =
 await fetch(
-
 "https://charts-spotify-com-service.spotify.com/auth/v0/charts/regional-global-weekly/latest",
-
 {
-headers: {
+headers:{
 Authorization: token
 }
 }
-
 );
 
-if (
-
-daily.status === 429
+if(
+daily.status===429
 ||
-weekly.status === 429
-
-) {
+weekly.status===429
+){
 
 console.log(
 "429 latestDate 😭"
 );
 
-await sleep(
-8000
-);
+await sleep(8000);
 
 continue;
 
@@ -80,7 +64,7 @@ await daily.json();
 const weeklyJson =
 await weekly.json();
 
-return {
+return{
 
 daily:
 
@@ -112,37 +96,29 @@ weeklyJson
 
 };
 
-
 }
 
-async function scrape(
-token
-) {
+async function scrape(token){
 
 console.log(
 "SCRAPING AMERICAS 😭🔥"
 );
 
-let results = [];
+let results=[];
 
-for (
-
+for(
 const country
 of countries
+){
 
-) {
-
-for (
-
+for(
 const type
 of ["weekly","daily"]
+){
 
-) {
-
-try {
+try{
 
 const url =
-
 `https://charts-spotify-com-service.spotify.com/auth/v0/charts/regional-${country.toLowerCase()}-${type}/latest`;
 
 console.log(
@@ -151,60 +127,42 @@ console.log(
 
 let response =
 await fetch(
-
 url,
-
 {
-headers: {
+headers:{
 Authorization: token,
-Accept:
-"application/json"
+Accept:"application/json"
 }
 }
-
 );
 
-while (
-
-response.status ===
-429
-
-) {
+while(
+response.status===429
+){
 
 console.log(
 `429 😭 ${country} ${type}`
 );
 
-await sleep(
-8000
-);
+await sleep(8000);
 
 response =
 await fetch(
-
 url,
-
 {
-headers: {
+headers:{
 Authorization: token,
-Accept:
-"application/json"
+Accept:"application/json"
 }
 }
-
 );
 
 }
 
-if (
-
-response.status !==
-200
-
-) {
-
+if(
+response.status!==200
+){
 continue;
-
 }
 
 const data =
@@ -217,38 +175,93 @@ data.chartEntryViewResponses
 ||
 [];
 
-for (
-
+for(
 const track
 of tracks
-
-) {
+){
 
 const artists =
-
 track.trackMetadata
 ?.artists
 ||
 [];
 
 const hasJimin =
-
 artists.some(
-
 artist =>
-
 artist.name
 ?.toLowerCase()
-
-=== "jimin"
-
+===
+"jimin"
 );
 
-if (
+if(hasJimin){
 
-hasJimin
+const currentRank =
+track.chartEntryData
+?.currentRank;
 
-) {
+const previousRank =
+track.chartEntryData
+?.previousRank;
+
+const rankChange =
+previousRank
+? Math.abs(
+currentRank -
+previousRank
+)
+: 0;
+
+let direction = "=";
+let entryStatus = null;
+
+// NEW ENTRY
+if(
+previousRank===null
+||
+previousRank===undefined
+){
+
+entryStatus =
+"NEW_ENTRY";
+
+}
+
+// RE-ENTRY
+else if(
+rankChange>=100
+){
+
+entryStatus =
+"RE_ENTRY";
+
+}
+
+// NORMAL MOVEMENT
+else{
+
+if(
+currentRank <
+previousRank
+){
+
+direction =
+"up";
+
+}
+
+else if(
+currentRank >
+previousRank
+){
+
+direction =
+"down";
+
+}
+
+}
 
 results.push({
 
@@ -256,14 +269,10 @@ country,
 type,
 
 rank:
-
-track.chartEntryData
-?.currentRank,
+currentRank,
 
 previousRank:
-
-track.chartEntryData
-?.previousRank,
+previousRank,
 
 peakRank:
 
@@ -295,27 +304,27 @@ a => a.name
 image:
 
 track.trackMetadata
-?.displayImageUri
+?.displayImageUri,
+
+rankChange,
+direction,
+entryStatus
 
 });
 
 console.log(
-
 `FOUND 😭🔥 ${country} ${track.trackMetadata?.trackName}`
-
 );
 
 }
 
 }
 
-await sleep(
-800
-);
+await sleep(800);
 
 }
 
-catch (err) {
+catch(err){
 
 console.log(
 err.message
@@ -328,15 +337,12 @@ err.message
 }
 
 fs.writeFileSync(
-
 "regional-americas.json",
-
 JSON.stringify(
 results,
 null,
 2
 )
-
 );
 
 console.log(
@@ -345,7 +351,7 @@ console.log(
 
 }
 
-async function start() {
+async function start(){
 
 const token =
 await getToken();
@@ -353,21 +359,17 @@ await getToken();
 let savedDates =
 null;
 
-if (
-
+if(
 fs.existsSync(
 "chart-dates-americas.json"
 )
-
-) {
+){
 
 savedDates =
 JSON.parse(
-
 fs.readFileSync(
 "chart-dates-americas.json"
 )
-
 );
 
 }
@@ -378,19 +380,13 @@ token
 );
 
 const firstRun =
-
 !savedDates
 ||
-
 !fs.existsSync(
 "regional-americas.json"
 );
 
-if (
-
-firstRun
-
-) {
+if(firstRun){
 
 console.log(
 "FIRST RUN 😍"
@@ -401,15 +397,12 @@ token
 );
 
 fs.writeFileSync(
-
 "chart-dates-americas.json",
-
 JSON.stringify(
 latest,
 null,
 2
 )
-
 );
 
 return;
@@ -417,19 +410,13 @@ return;
 }
 
 const changed =
-
 latest.daily !==
 savedDates.daily
 ||
-
 latest.weekly !==
 savedDates.weekly;
 
-if (
-
-changed
-
-) {
+if(changed){
 
 console.log(
 "NEW CHART 😍"
@@ -440,20 +427,17 @@ token
 );
 
 fs.writeFileSync(
-
 "chart-dates-americas.json",
-
 JSON.stringify(
 latest,
 null,
 2
 )
-
 );
 
 }
 
-else {
+else{
 
 console.log(
 "SAME CHART 😴"
