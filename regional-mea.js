@@ -8,7 +8,7 @@ setTimeout(resolve, ms)
 
 const countries = [
 
-"EG", "IL", "MA", "NG", "SA", "ZA", "TR", "AE", "CL"
+"EG", "IL", "MA", "NG", "SA", "ZA", "TR", "AE"
 
 ];
 
