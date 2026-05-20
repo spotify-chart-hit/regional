@@ -11,7 +11,7 @@ permissions:
 
 concurrency:
   group: regional-charts
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   americas:
