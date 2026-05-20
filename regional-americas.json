@@ -19,17 +19,17 @@
   {
     "country": "GLOBAL",
     "type": "daily",
-    "rank": 139,
-    "previousRank": 133,
+    "rank": 154,
+    "previousRank": 139,
     "peakRank": 1,
-    "appearances": 669,
-    "streams": "1459287",
+    "appearances": 670,
+    "streams": "1432743",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 6,
+    "rankChange": 15,
     "direction": "down",
     "entryStatus": "MOVED_DOWN"
   },
@@ -53,19 +53,19 @@
   {
     "country": "BO",
     "type": "daily",
-    "rank": 16,
-    "previousRank": 117,
+    "rank": 33,
+    "previousRank": 16,
     "peakRank": 1,
-    "appearances": 660,
-    "streams": "10776",
+    "appearances": 661,
+    "streams": "8857",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 101,
-    "direction": "up",
-    "entryStatus": "MOVED_UP"
+    "rankChange": 17,
+    "direction": "down",
+    "entryStatus": "MOVED_DOWN"
   },
   {
     "country": "CL",
@@ -90,8 +90,8 @@
     "rank": 1,
     "previousRank": 1,
     "peakRank": 1,
-    "appearances": 669,
-    "streams": "212683",
+    "appearances": 670,
+    "streams": "214470",
     "track": "Who",
     "artists": [
       "Jimin"
@@ -121,17 +121,17 @@
   {
     "country": "CR",
     "type": "daily",
-    "rank": 8,
-    "previousRank": 6,
+    "rank": 14,
+    "previousRank": 8,
     "peakRank": 1,
-    "appearances": 669,
-    "streams": "20644",
+    "appearances": 670,
+    "streams": "18893",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 2,
+    "rankChange": 6,
     "direction": "down",
     "entryStatus": "MOVED_DOWN"
   },
@@ -153,6 +153,23 @@
     "entryStatus": "MOVED_DOWN"
   },
   {
+    "country": "SV",
+    "type": "daily",
+    "rank": 30,
+    "previousRank": -1,
+    "peakRank": 1,
+    "appearances": 648,
+    "streams": "11513",
+    "track": "Who",
+    "artists": [
+      "Jimin"
+    ],
+    "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
+    "rankChange": 31,
+    "direction": "down",
+    "entryStatus": "RE_ENTRY"
+  },
+  {
     "country": "PY",
     "type": "weekly",
     "rank": 27,
@@ -172,17 +189,17 @@
   {
     "country": "PY",
     "type": "daily",
-    "rank": 7,
-    "previousRank": 3,
+    "rank": 31,
+    "previousRank": 7,
     "peakRank": 1,
-    "appearances": 641,
-    "streams": "12976",
+    "appearances": 642,
+    "streams": "8837",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 4,
+    "rankChange": 24,
     "direction": "down",
     "entryStatus": "MOVED_DOWN"
   },
@@ -206,17 +223,17 @@
   {
     "country": "UY",
     "type": "daily",
-    "rank": 25,
-    "previousRank": 27,
+    "rank": 24,
+    "previousRank": 25,
     "peakRank": 10,
-    "appearances": 550,
-    "streams": "7644",
+    "appearances": 551,
+    "streams": "7575",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 2,
+    "rankChange": 1,
     "direction": "up",
     "entryStatus": "MOVED_UP"
   },
@@ -261,8 +278,8 @@
     "rank": 2,
     "previousRank": 2,
     "peakRank": 1,
-    "appearances": 669,
-    "streams": "60763",
+    "appearances": 670,
+    "streams": "60275",
     "track": "Who",
     "artists": [
       "Jimin"
@@ -271,5 +288,23 @@
     "rankChange": 0,
     "direction": "=",
     "entryStatus": "NO_CHANGE"
+  },
+  {
+    "country": "VE",
+    "type": "daily",
+    "rank": 58,
+    "previousRank": -1,
+    "peakRank": 3,
+    "appearances": 143,
+    "streams": "9967",
+    "track": "Smeraldo Garden Marching Band (feat. Loco)",
+    "artists": [
+      "Jimin",
+      "Loco"
+    ],
+    "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
+    "rankChange": 59,
+    "direction": "down",
+    "entryStatus": "RE_ENTRY"
   }
 ]
