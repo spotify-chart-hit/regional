@@ -29,6 +29,9 @@ jobs:
         with:
           node-version: 20
 
+      - name: Install Playwright Browser
+        run: npx playwright install chromium
+
       - name: Run Americas
         run: node regional-americas.js
 
@@ -64,6 +67,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+
+      - name: Install Playwright Browser
+        run: npx playwright install chromium
 
       - name: Run Europe
         run: node regional-europe.js
@@ -101,6 +107,9 @@ jobs:
         with:
           node-version: 20
 
+      - name: Install Playwright Browser
+        run: npx playwright install chromium
+
       - name: Run Asia
         run: node regional-asia.js
 
@@ -137,6 +146,9 @@ jobs:
         with:
           node-version: 20
 
+      - name: Install Playwright Browser
+        run: npx playwright install chromium
+
       - name: Run MEA
         run: node regional-mea.js
 
@@ -172,6 +184,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+
+      - name: Wait for latest commit
+        run: |
+          git pull origin main
+          sleep 5
 
       - name: Run Merge
         run: node merge-regional.js
