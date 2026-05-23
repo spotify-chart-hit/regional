@@ -5,6 +5,7 @@ on:
 
 permissions:
   contents: write
+  actions: read
 
 concurrency:
   group: regional-charts
@@ -20,6 +21,7 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: true
+          token: ${{ github.token }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -59,6 +61,7 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: true
+          token: ${{ github.token }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -98,6 +101,7 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: true
+          token: ${{ github.token }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -137,6 +141,7 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: true
+          token: ${{ github.token }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -176,6 +181,7 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: true
+          token: ${{ github.token }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
