@@ -19,17 +19,17 @@
   {
     "country": "BO",
     "type": "daily",
-    "rank": 49,
-    "previousRank": 45,
+    "rank": 56,
+    "previousRank": 49,
     "peakRank": 1,
-    "appearances": 668,
-    "streams": "8299",
+    "appearances": 669,
+    "streams": "7305",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 4,
+    "rankChange": 7,
     "direction": "down",
     "entryStatus": "MOVED_DOWN"
   },
@@ -56,8 +56,8 @@
     "rank": 2,
     "previousRank": 2,
     "peakRank": 1,
-    "appearances": 677,
-    "streams": "221846",
+    "appearances": 678,
+    "streams": "222516",
     "track": "Who",
     "artists": [
       "Jimin"
@@ -87,11 +87,11 @@
   {
     "country": "CR",
     "type": "daily",
-    "rank": 6,
-    "previousRank": 7,
+    "rank": 5,
+    "previousRank": 6,
     "peakRank": 1,
-    "appearances": 677,
-    "streams": "23240",
+    "appearances": 678,
+    "streams": "23705",
     "track": "Who",
     "artists": [
       "Jimin"
@@ -121,36 +121,36 @@
   {
     "country": "SV",
     "type": "daily",
-    "rank": 10,
-    "previousRank": 51,
+    "rank": 23,
+    "previousRank": 10,
     "peakRank": 1,
-    "appearances": 655,
-    "streams": "13914",
+    "appearances": 656,
+    "streams": "12044",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 41,
-    "direction": "up",
-    "entryStatus": "MOVED_UP"
+    "rankChange": 13,
+    "direction": "down",
+    "entryStatus": "MOVED_DOWN"
   },
   {
     "country": "NI",
     "type": "daily",
-    "rank": 146,
-    "previousRank": -1,
+    "rank": 76,
+    "previousRank": 146,
     "peakRank": 1,
-    "appearances": 465,
-    "streams": "3748",
+    "appearances": 466,
+    "streams": "4803",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 147,
-    "direction": "down",
-    "entryStatus": "RE_ENTRY"
+    "rankChange": 70,
+    "direction": "up",
+    "entryStatus": "MOVED_UP"
   },
   {
     "country": "PY",
@@ -173,18 +173,18 @@
     "country": "PY",
     "type": "daily",
     "rank": 4,
-    "previousRank": 1,
+    "previousRank": 4,
     "peakRank": 1,
-    "appearances": 649,
-    "streams": "19894",
+    "appearances": 650,
+    "streams": "16931",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 3,
-    "direction": "down",
-    "entryStatus": "MOVED_DOWN"
+    "rankChange": 0,
+    "direction": "=",
+    "entryStatus": "NO_CHANGE"
   },
   {
     "country": "UY",
@@ -206,17 +206,17 @@
   {
     "country": "UY",
     "type": "daily",
-    "rank": 20,
-    "previousRank": 32,
+    "rank": 19,
+    "previousRank": 20,
     "peakRank": 10,
-    "appearances": 558,
-    "streams": "7482",
+    "appearances": 559,
+    "streams": "7893",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 12,
+    "rankChange": 1,
     "direction": "up",
     "entryStatus": "MOVED_UP"
   },
@@ -243,8 +243,8 @@
     "rank": 2,
     "previousRank": 2,
     "peakRank": 1,
-    "appearances": 677,
-    "streams": "41483",
+    "appearances": 678,
+    "streams": "35964",
     "track": "Who",
     "artists": [
       "Jimin"
@@ -258,17 +258,17 @@
     "country": "VE",
     "type": "daily",
     "rank": 117,
-    "previousRank": -1,
+    "previousRank": 117,
     "peakRank": 3,
-    "appearances": 169,
-    "streams": "7442",
+    "appearances": 170,
+    "streams": "7435",
     "track": "Rebirth (Intro)",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 118,
-    "direction": "down",
-    "entryStatus": "RE_ENTRY"
+    "rankChange": 0,
+    "direction": "=",
+    "entryStatus": "NO_CHANGE"
   }
 ]
