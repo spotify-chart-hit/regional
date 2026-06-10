@@ -19,19 +19,19 @@
   {
     "country": "JP",
     "type": "daily",
-    "rank": 33,
-    "previousRank": 41,
+    "rank": 36,
+    "previousRank": 33,
     "peakRank": 1,
-    "appearances": 690,
-    "streams": "141913",
+    "appearances": 691,
+    "streams": "140082",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 8,
-    "direction": "up",
-    "entryStatus": "MOVED_UP"
+    "rankChange": 3,
+    "direction": "down",
+    "entryStatus": "MOVED_DOWN"
   },
   {
     "country": "PH",
@@ -49,23 +49,6 @@
     "rankChange": 185,
     "direction": "down",
     "entryStatus": "RE_ENTRY"
-  },
-  {
-    "country": "PH",
-    "type": "daily",
-    "rank": 128,
-    "previousRank": 182,
-    "peakRank": 12,
-    "appearances": 613,
-    "streams": "117553",
-    "track": "Who",
-    "artists": [
-      "Jimin"
-    ],
-    "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 54,
-    "direction": "up",
-    "entryStatus": "MOVED_UP"
   },
   {
     "country": "SG",
@@ -107,8 +90,8 @@
     "rank": 3,
     "previousRank": 3,
     "peakRank": 1,
-    "appearances": 690,
-    "streams": "48076",
+    "appearances": 691,
+    "streams": "42472",
     "track": "Who",
     "artists": [
       "Jimin"
@@ -117,23 +100,6 @@
     "rankChange": 0,
     "direction": "=",
     "entryStatus": "NO_CHANGE"
-  },
-  {
-    "country": "SG",
-    "type": "daily",
-    "rank": 148,
-    "previousRank": 104,
-    "peakRank": 3,
-    "appearances": 521,
-    "streams": "8882",
-    "track": "Like Crazy",
-    "artists": [
-      "Jimin"
-    ],
-    "image": "https://i.scdn.co/image/ab67616d00001e022b46078245d0120690eb560d",
-    "rankChange": 44,
-    "direction": "down",
-    "entryStatus": "MOVED_DOWN"
   },
   {
     "country": "KR",
@@ -175,8 +141,8 @@
     "rank": 6,
     "previousRank": 6,
     "peakRank": 1,
-    "appearances": 690,
-    "streams": "62955",
+    "appearances": 691,
+    "streams": "62778",
     "track": "Who",
     "artists": [
       "Jimin"
@@ -189,17 +155,17 @@
   {
     "country": "KR",
     "type": "daily",
-    "rank": 75,
-    "previousRank": 62,
+    "rank": 84,
+    "previousRank": 75,
     "peakRank": 2,
-    "appearances": 675,
-    "streams": "18524",
+    "appearances": 676,
+    "streams": "17314",
     "track": "Be Mine",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 13,
+    "rankChange": 9,
     "direction": "down",
     "entryStatus": "MOVED_DOWN"
   },
@@ -223,17 +189,17 @@
   {
     "country": "TW",
     "type": "daily",
-    "rank": 4,
-    "previousRank": 5,
+    "rank": 2,
+    "previousRank": 4,
     "peakRank": 1,
-    "appearances": 690,
-    "streams": "52660",
+    "appearances": 691,
+    "streams": "53373",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 1,
+    "rankChange": 2,
     "direction": "up",
     "entryStatus": "MOVED_UP"
   },
@@ -257,17 +223,17 @@
   {
     "country": "TH",
     "type": "daily",
-    "rank": 20,
-    "previousRank": 17,
+    "rank": 96,
+    "previousRank": 20,
     "peakRank": 1,
-    "appearances": 690,
-    "streams": "93590",
+    "appearances": 691,
+    "streams": "51605",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 3,
+    "rankChange": 76,
     "direction": "down",
     "entryStatus": "MOVED_DOWN"
   },
@@ -291,17 +257,17 @@
   {
     "country": "VN",
     "type": "daily",
-    "rank": 26,
-    "previousRank": 19,
+    "rank": 28,
+    "previousRank": 26,
     "peakRank": 1,
-    "appearances": 462,
-    "streams": "60164",
+    "appearances": 463,
+    "streams": "57720",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 7,
+    "rankChange": 2,
     "direction": "down",
     "entryStatus": "MOVED_DOWN"
   }
