@@ -19,18 +19,18 @@
   {
     "country": "SA",
     "type": "daily",
-    "rank": 193,
-    "previousRank": 142,
+    "rank": 136,
+    "previousRank": 193,
     "peakRank": 1,
-    "appearances": 638,
-    "streams": "3342",
+    "appearances": 639,
+    "streams": "3911",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 51,
-    "direction": "down",
-    "entryStatus": "MOVED_DOWN"
+    "rankChange": 57,
+    "direction": "up",
+    "entryStatus": "MOVED_UP"
   }
 ]
