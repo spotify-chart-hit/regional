@@ -22,8 +22,8 @@
     "rank": 47,
     "previousRank": 47,
     "peakRank": 1,
-    "appearances": 712,
-    "streams": "116459",
+    "appearances": 713,
+    "streams": "120094",
     "track": "Who",
     "artists": [
       "Jimin"
@@ -53,19 +53,19 @@
   {
     "country": "SG",
     "type": "daily",
-    "rank": 7,
+    "rank": 9,
     "previousRank": 7,
     "peakRank": 1,
-    "appearances": 712,
-    "streams": "30427",
+    "appearances": 713,
+    "streams": "29747",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 0,
-    "direction": "=",
-    "entryStatus": "NO_CHANGE"
+    "rankChange": 2,
+    "direction": "down",
+    "entryStatus": "MOVED_DOWN"
   },
   {
     "country": "KR",
@@ -105,33 +105,33 @@
     "country": "KR",
     "type": "daily",
     "rank": 12,
-    "previousRank": 11,
+    "previousRank": 12,
     "peakRank": 1,
-    "appearances": 712,
-    "streams": "39280",
+    "appearances": 713,
+    "streams": "38920",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 1,
-    "direction": "down",
-    "entryStatus": "MOVED_DOWN"
+    "rankChange": 0,
+    "direction": "=",
+    "entryStatus": "NO_CHANGE"
   },
   {
     "country": "KR",
     "type": "daily",
-    "rank": 196,
-    "previousRank": 200,
+    "rank": 188,
+    "previousRank": 196,
     "peakRank": 2,
-    "appearances": 692,
-    "streams": "11782",
+    "appearances": 693,
+    "streams": "11737",
     "track": "Be Mine",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 4,
+    "rankChange": 8,
     "direction": "up",
     "entryStatus": "MOVED_UP"
   },
@@ -155,17 +155,17 @@
   {
     "country": "TW",
     "type": "daily",
-    "rank": 24,
-    "previousRank": 12,
+    "rank": 35,
+    "previousRank": 24,
     "peakRank": 1,
-    "appearances": 712,
-    "streams": "29827",
+    "appearances": 713,
+    "streams": "27108",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 12,
+    "rankChange": 11,
     "direction": "down",
     "entryStatus": "MOVED_DOWN"
   },
@@ -189,19 +189,19 @@
   {
     "country": "TH",
     "type": "daily",
-    "rank": 30,
-    "previousRank": 26,
+    "rank": 25,
+    "previousRank": 30,
     "peakRank": 1,
-    "appearances": 712,
-    "streams": "91211",
+    "appearances": 713,
+    "streams": "86957",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 4,
-    "direction": "down",
-    "entryStatus": "MOVED_DOWN"
+    "rankChange": 5,
+    "direction": "up",
+    "entryStatus": "MOVED_UP"
   },
   {
     "country": "VN",
@@ -240,35 +240,35 @@
   {
     "country": "VN",
     "type": "daily",
-    "rank": 32,
-    "previousRank": 30,
+    "rank": 41,
+    "previousRank": 32,
     "peakRank": 1,
-    "appearances": 484,
-    "streams": "57039",
+    "appearances": 485,
+    "streams": "50073",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 2,
+    "rankChange": 9,
     "direction": "down",
     "entryStatus": "MOVED_DOWN"
   },
   {
     "country": "VN",
     "type": "daily",
-    "rank": 105,
-    "previousRank": 110,
+    "rank": 158,
+    "previousRank": 105,
     "peakRank": 6,
-    "appearances": 210,
-    "streams": "33269",
+    "appearances": 211,
+    "streams": "27140",
     "track": "Be Mine",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 5,
-    "direction": "up",
-    "entryStatus": "MOVED_UP"
+    "rankChange": 53,
+    "direction": "down",
+    "entryStatus": "MOVED_DOWN"
   }
 ]
