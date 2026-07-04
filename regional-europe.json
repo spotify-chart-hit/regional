@@ -108,8 +108,8 @@
     "rank": 1,
     "previousRank": 1,
     "peakRank": 1,
-    "appearances": 714,
-    "streams": "16137",
+    "appearances": 715,
+    "streams": "19733",
     "track": "Who",
     "artists": [
       "Jimin"
@@ -123,27 +123,27 @@
     "country": "BY",
     "type": "daily",
     "rank": 2,
-    "previousRank": 3,
+    "previousRank": 2,
     "peakRank": 2,
-    "appearances": 714,
-    "streams": "10731",
+    "appearances": 715,
+    "streams": "11395",
     "track": "Be Mine",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 1,
-    "direction": "up",
-    "entryStatus": "MOVED_UP"
+    "rankChange": 0,
+    "direction": "=",
+    "entryStatus": "NO_CHANGE"
   },
   {
     "country": "BY",
     "type": "daily",
-    "rank": 6,
-    "previousRank": 7,
+    "rank": 5,
+    "previousRank": 6,
     "peakRank": 3,
-    "appearances": 681,
-    "streams": "4668",
+    "appearances": 682,
+    "streams": "5089",
     "track": "Like Crazy",
     "artists": [
       "Jimin"
@@ -156,71 +156,54 @@
   {
     "country": "BY",
     "type": "daily",
-    "rank": 9,
-    "previousRank": 11,
+    "rank": 6,
+    "previousRank": 9,
     "peakRank": 4,
-    "appearances": 518,
-    "streams": "4476",
+    "appearances": 519,
+    "streams": "4733",
     "track": "Rebirth (Intro)",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 2,
+    "rankChange": 3,
     "direction": "up",
     "entryStatus": "MOVED_UP"
   },
   {
     "country": "BY",
     "type": "daily",
-    "rank": 48,
-    "previousRank": 65,
+    "rank": 81,
+    "previousRank": 48,
     "peakRank": 5,
-    "appearances": 453,
-    "streams": "2602",
+    "appearances": 454,
+    "streams": "1889",
     "track": "Slow Dance (feat. Sofia Carson)",
     "artists": [
       "Jimin",
       "Sofia Carson"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 17,
-    "direction": "up",
-    "entryStatus": "MOVED_UP"
+    "rankChange": 33,
+    "direction": "down",
+    "entryStatus": "MOVED_DOWN"
   },
   {
     "country": "BY",
     "type": "daily",
-    "rank": 73,
-    "previousRank": -1,
+    "rank": 131,
+    "previousRank": 73,
     "peakRank": 3,
-    "appearances": 535,
-    "streams": "2121",
+    "appearances": 536,
+    "streams": "1611",
     "track": "Who (Rock Remix)",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f150d9f2e5e8148e5032fd7d",
-    "rankChange": 74,
+    "rankChange": 58,
     "direction": "down",
-    "entryStatus": "RE_ENTRY"
-  },
-  {
-    "country": "BY",
-    "type": "daily",
-    "rank": 188,
-    "previousRank": -1,
-    "peakRank": 5,
-    "appearances": 481,
-    "streams": "1485",
-    "track": "Who (Shibuyakei Remix)",
-    "artists": [
-      "Jimin"
-    ],
-    "image": "https://i.scdn.co/image/ab67616d00001e0282601539d4a27061ad90eacb",
-    "rankChange": 189,
-    "direction": "down",
-    "entryStatus": "RE_ENTRY"
+    "entryStatus": "MOVED_DOWN"
   },
   {
     "country": "BG",
@@ -289,39 +272,5 @@
     "rankChange": 104,
     "direction": "down",
     "entryStatus": "MOVED_DOWN"
-  },
-  {
-    "country": "BG",
-    "type": "daily",
-    "rank": 104,
-    "previousRank": 89,
-    "peakRank": 1,
-    "appearances": 713,
-    "streams": "2958",
-    "track": "Who",
-    "artists": [
-      "Jimin"
-    ],
-    "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 15,
-    "direction": "down",
-    "entryStatus": "MOVED_DOWN"
-  },
-  {
-    "country": "UA",
-    "type": "daily",
-    "rank": 188,
-    "previousRank": -1,
-    "peakRank": 13,
-    "appearances": 677,
-    "streams": "5229",
-    "track": "Who",
-    "artists": [
-      "Jimin"
-    ],
-    "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 189,
-    "direction": "down",
-    "entryStatus": "RE_ENTRY"
   }
 ]
