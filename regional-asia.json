@@ -19,19 +19,19 @@
   {
     "country": "JP",
     "type": "daily",
-    "rank": 70,
-    "previousRank": 66,
+    "rank": 53,
+    "previousRank": 70,
     "peakRank": 1,
-    "appearances": 721,
-    "streams": "80903",
+    "appearances": 722,
+    "streams": "90813",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 4,
-    "direction": "down",
-    "entryStatus": "MOVED_DOWN"
+    "rankChange": 17,
+    "direction": "up",
+    "entryStatus": "MOVED_UP"
   },
   {
     "country": "SG",
@@ -53,17 +53,17 @@
   {
     "country": "SG",
     "type": "daily",
-    "rank": 10,
-    "previousRank": 16,
+    "rank": 6,
+    "previousRank": 10,
     "peakRank": 1,
-    "appearances": 721,
-    "streams": "25506",
+    "appearances": 722,
+    "streams": "28978",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 6,
+    "rankChange": 4,
     "direction": "up",
     "entryStatus": "MOVED_UP"
   },
@@ -104,36 +104,36 @@
   {
     "country": "KR",
     "type": "daily",
-    "rank": 11,
+    "rank": 9,
     "previousRank": 11,
     "peakRank": 1,
-    "appearances": 721,
-    "streams": "40846",
+    "appearances": 722,
+    "streams": "47173",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 0,
-    "direction": "=",
-    "entryStatus": "NO_CHANGE"
+    "rankChange": 2,
+    "direction": "up",
+    "entryStatus": "MOVED_UP"
   },
   {
     "country": "KR",
     "type": "daily",
-    "rank": 119,
-    "previousRank": 115,
+    "rank": 106,
+    "previousRank": 119,
     "peakRank": 2,
-    "appearances": 701,
-    "streams": "13642",
+    "appearances": 702,
+    "streams": "14025",
     "track": "Be Mine",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 4,
-    "direction": "down",
-    "entryStatus": "MOVED_DOWN"
+    "rankChange": 13,
+    "direction": "up",
+    "entryStatus": "MOVED_UP"
   },
   {
     "country": "TW",
@@ -155,19 +155,19 @@
   {
     "country": "TW",
     "type": "daily",
-    "rank": 5,
-    "previousRank": 6,
+    "rank": 8,
+    "previousRank": 5,
     "peakRank": 1,
-    "appearances": 721,
-    "streams": "41255",
+    "appearances": 722,
+    "streams": "35673",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 1,
-    "direction": "up",
-    "entryStatus": "MOVED_UP"
+    "rankChange": 3,
+    "direction": "down",
+    "entryStatus": "MOVED_DOWN"
   },
   {
     "country": "TH",
@@ -189,17 +189,17 @@
   {
     "country": "TH",
     "type": "daily",
-    "rank": 36,
-    "previousRank": 41,
+    "rank": 24,
+    "previousRank": 36,
     "peakRank": 1,
-    "appearances": 721,
-    "streams": "83352",
+    "appearances": 722,
+    "streams": "92833",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 5,
+    "rankChange": 12,
     "direction": "up",
     "entryStatus": "MOVED_UP"
   },
@@ -240,35 +240,35 @@
   {
     "country": "VN",
     "type": "daily",
-    "rank": 32,
-    "previousRank": 50,
+    "rank": 34,
+    "previousRank": 32,
     "peakRank": 1,
-    "appearances": 493,
-    "streams": "55078",
+    "appearances": 494,
+    "streams": "55197",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 18,
-    "direction": "up",
-    "entryStatus": "MOVED_UP"
+    "rankChange": 2,
+    "direction": "down",
+    "entryStatus": "MOVED_DOWN"
   },
   {
     "country": "VN",
     "type": "daily",
-    "rank": 99,
-    "previousRank": 161,
+    "rank": 100,
+    "previousRank": 99,
     "peakRank": 6,
-    "appearances": 219,
-    "streams": "35189",
+    "appearances": 220,
+    "streams": "34634",
     "track": "Be Mine",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 62,
-    "direction": "up",
-    "entryStatus": "MOVED_UP"
+    "rankChange": 1,
+    "direction": "down",
+    "entryStatus": "MOVED_DOWN"
   }
 ]
