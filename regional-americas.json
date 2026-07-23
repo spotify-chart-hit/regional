@@ -22,8 +22,8 @@
     "rank": 1,
     "previousRank": 1,
     "peakRank": 1,
-    "appearances": 733,
-    "streams": "245123",
+    "appearances": 734,
+    "streams": "265143",
     "track": "Who",
     "artists": [
       "Jimin"
@@ -53,19 +53,19 @@
   {
     "country": "CR",
     "type": "daily",
-    "rank": 55,
-    "previousRank": 87,
+    "rank": 96,
+    "previousRank": 55,
     "peakRank": 1,
-    "appearances": 733,
-    "streams": "10906",
+    "appearances": 734,
+    "streams": "8596",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 32,
-    "direction": "up",
-    "entryStatus": "MOVED_UP"
+    "rankChange": 41,
+    "direction": "down",
+    "entryStatus": "MOVED_DOWN"
   },
   {
     "country": "PY",
@@ -85,13 +85,30 @@
     "entryStatus": "MOVED_DOWN"
   },
   {
+    "country": "PY",
+    "type": "daily",
+    "rank": 55,
+    "previousRank": -1,
+    "peakRank": 1,
+    "appearances": 701,
+    "streams": "7333",
+    "track": "Who",
+    "artists": [
+      "Jimin"
+    ],
+    "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
+    "rankChange": 56,
+    "direction": "down",
+    "entryStatus": "RE_ENTRY"
+  },
+  {
     "country": "VE",
     "type": "daily",
     "rank": 2,
     "previousRank": 2,
     "peakRank": 1,
-    "appearances": 708,
-    "streams": "39169",
+    "appearances": 709,
+    "streams": "35147",
     "track": "Who",
     "artists": [
       "Jimin"
@@ -100,22 +117,5 @@
     "rankChange": 0,
     "direction": "=",
     "entryStatus": "NO_CHANGE"
-  },
-  {
-    "country": "VE",
-    "type": "daily",
-    "rank": 74,
-    "previousRank": -1,
-    "peakRank": 3,
-    "appearances": 188,
-    "streams": "8045",
-    "track": "Closer Than This",
-    "artists": [
-      "Jimin"
-    ],
-    "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 75,
-    "direction": "down",
-    "entryStatus": "RE_ENTRY"
   }
 ]
