@@ -5,8 +5,8 @@
     "rank": 1,
     "previousRank": 1,
     "peakRank": 1,
-    "appearances": 104,
-    "streams": "1826309",
+    "appearances": 105,
+    "streams": "1787337",
     "track": "Who",
     "artists": [
       "Jimin"
@@ -22,8 +22,8 @@
     "rank": 1,
     "previousRank": 1,
     "peakRank": 1,
-    "appearances": 735,
-    "streams": "265248",
+    "appearances": 736,
+    "streams": "272221",
     "track": "Who",
     "artists": [
       "Jimin"
@@ -36,11 +36,11 @@
   {
     "country": "CR",
     "type": "weekly",
-    "rank": 34,
-    "previousRank": 14,
+    "rank": 54,
+    "previousRank": 34,
     "peakRank": 2,
-    "appearances": 104,
-    "streams": "88258",
+    "appearances": 105,
+    "streams": "74610",
     "track": "Who",
     "artists": [
       "Jimin"
@@ -69,23 +69,6 @@
   },
   {
     "country": "PY",
-    "type": "weekly",
-    "rank": 76,
-    "previousRank": 21,
-    "peakRank": 1,
-    "appearances": 101,
-    "streams": "46313",
-    "track": "Who",
-    "artists": [
-      "Jimin"
-    ],
-    "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 55,
-    "direction": "down",
-    "entryStatus": "MOVED_DOWN"
-  },
-  {
-    "country": "PY",
     "type": "daily",
     "rank": 157,
     "previousRank": 55,
@@ -100,6 +83,40 @@
     "rankChange": 102,
     "direction": "down",
     "entryStatus": "MOVED_DOWN"
+  },
+  {
+    "country": "UY",
+    "type": "daily",
+    "rank": 155,
+    "previousRank": -1,
+    "peakRank": 10,
+    "appearances": 591,
+    "streams": "3822",
+    "track": "Who",
+    "artists": [
+      "Jimin"
+    ],
+    "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
+    "rankChange": 156,
+    "direction": "down",
+    "entryStatus": "RE_ENTRY"
+  },
+  {
+    "country": "VE",
+    "type": "weekly",
+    "rank": 5,
+    "previousRank": -1,
+    "peakRank": 1,
+    "appearances": 102,
+    "streams": "134336",
+    "track": "Who",
+    "artists": [
+      "Jimin"
+    ],
+    "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
+    "rankChange": 6,
+    "direction": "down",
+    "entryStatus": "RE_ENTRY"
   },
   {
     "country": "VE",
