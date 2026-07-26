@@ -20,18 +20,18 @@
     "country": "JP",
     "type": "daily",
     "rank": 71,
-    "previousRank": 65,
+    "previousRank": 71,
     "peakRank": 1,
-    "appearances": 736,
-    "streams": "82801",
+    "appearances": 737,
+    "streams": "84308",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 6,
-    "direction": "down",
-    "entryStatus": "MOVED_DOWN"
+    "rankChange": 0,
+    "direction": "=",
+    "entryStatus": "NO_CHANGE"
   },
   {
     "country": "SG",
@@ -53,19 +53,19 @@
   {
     "country": "SG",
     "type": "daily",
-    "rank": 8,
-    "previousRank": 21,
+    "rank": 11,
+    "previousRank": 8,
     "peakRank": 1,
-    "appearances": 736,
-    "streams": "28055",
+    "appearances": 737,
+    "streams": "24812",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 13,
-    "direction": "up",
-    "entryStatus": "MOVED_UP"
+    "rankChange": 3,
+    "direction": "down",
+    "entryStatus": "MOVED_DOWN"
   },
   {
     "country": "KR",
@@ -104,36 +104,36 @@
   {
     "country": "KR",
     "type": "daily",
-    "rank": 11,
-    "previousRank": 6,
+    "rank": 10,
+    "previousRank": 11,
     "peakRank": 1,
-    "appearances": 736,
-    "streams": "48436",
+    "appearances": 737,
+    "streams": "46826",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 5,
-    "direction": "down",
-    "entryStatus": "MOVED_DOWN"
+    "rankChange": 1,
+    "direction": "up",
+    "entryStatus": "MOVED_UP"
   },
   {
     "country": "KR",
     "type": "daily",
-    "rank": 102,
-    "previousRank": 71,
+    "rank": 89,
+    "previousRank": 102,
     "peakRank": 2,
-    "appearances": 716,
-    "streams": "15980",
+    "appearances": 717,
+    "streams": "15890",
     "track": "Be Mine",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 31,
-    "direction": "down",
-    "entryStatus": "MOVED_DOWN"
+    "rankChange": 13,
+    "direction": "up",
+    "entryStatus": "MOVED_UP"
   },
   {
     "country": "TW",
@@ -155,17 +155,17 @@
   {
     "country": "TW",
     "type": "daily",
-    "rank": 20,
-    "previousRank": 8,
+    "rank": 24,
+    "previousRank": 20,
     "peakRank": 1,
-    "appearances": 736,
-    "streams": "32733",
+    "appearances": 737,
+    "streams": "30127",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 12,
+    "rankChange": 4,
     "direction": "down",
     "entryStatus": "MOVED_DOWN"
   },
@@ -189,19 +189,19 @@
   {
     "country": "TH",
     "type": "daily",
-    "rank": 35,
-    "previousRank": 18,
+    "rank": 14,
+    "previousRank": 35,
     "peakRank": 1,
-    "appearances": 736,
-    "streams": "82214",
+    "appearances": 737,
+    "streams": "104335",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 17,
-    "direction": "down",
-    "entryStatus": "MOVED_DOWN"
+    "rankChange": 21,
+    "direction": "up",
+    "entryStatus": "MOVED_UP"
   },
   {
     "country": "VN",
@@ -234,23 +234,6 @@
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
     "rankChange": 63,
-    "direction": "down",
-    "entryStatus": "MOVED_DOWN"
-  },
-  {
-    "country": "VN",
-    "type": "daily",
-    "rank": 103,
-    "previousRank": 101,
-    "peakRank": 1,
-    "appearances": 508,
-    "streams": "34398",
-    "track": "Who",
-    "artists": [
-      "Jimin"
-    ],
-    "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 2,
     "direction": "down",
     "entryStatus": "MOVED_DOWN"
   }
