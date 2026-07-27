@@ -22,8 +22,8 @@
     "rank": 1,
     "previousRank": 1,
     "peakRank": 1,
-    "appearances": 737,
-    "streams": "264658",
+    "appearances": 738,
+    "streams": "274308",
     "track": "Who",
     "artists": [
       "Jimin"
@@ -53,34 +53,34 @@
   {
     "country": "CR",
     "type": "daily",
-    "rank": 20,
-    "previousRank": 31,
+    "rank": 27,
+    "previousRank": 20,
     "peakRank": 1,
-    "appearances": 737,
-    "streams": "16719",
+    "appearances": 738,
+    "streams": "13757",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 11,
-    "direction": "up",
-    "entryStatus": "MOVED_UP"
+    "rankChange": 7,
+    "direction": "down",
+    "entryStatus": "MOVED_DOWN"
   },
   {
     "country": "UY",
     "type": "daily",
-    "rank": 83,
-    "previousRank": 155,
+    "rank": 73,
+    "previousRank": 83,
     "peakRank": 10,
-    "appearances": 592,
-    "streams": "4770",
+    "appearances": 593,
+    "streams": "4895",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 72,
+    "rankChange": 10,
     "direction": "up",
     "entryStatus": "MOVED_UP"
   },
@@ -107,8 +107,8 @@
     "rank": 2,
     "previousRank": 2,
     "peakRank": 1,
-    "appearances": 712,
-    "streams": "46279",
+    "appearances": 713,
+    "streams": "51866",
     "track": "Who",
     "artists": [
       "Jimin"
@@ -117,5 +117,22 @@
     "rankChange": 0,
     "direction": "=",
     "entryStatus": "NO_CHANGE"
+  },
+  {
+    "country": "VE",
+    "type": "daily",
+    "rank": 159,
+    "previousRank": -1,
+    "peakRank": 3,
+    "appearances": 190,
+    "streams": "5068",
+    "track": "Closer Than This",
+    "artists": [
+      "Jimin"
+    ],
+    "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
+    "rankChange": 160,
+    "direction": "down",
+    "entryStatus": "RE_ENTRY"
   }
 ]
