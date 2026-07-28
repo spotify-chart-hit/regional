@@ -22,8 +22,8 @@
     "rank": 1,
     "previousRank": 1,
     "peakRank": 1,
-    "appearances": 738,
-    "streams": "274308",
+    "appearances": 739,
+    "streams": "204866",
     "track": "Who",
     "artists": [
       "Jimin"
@@ -53,36 +53,36 @@
   {
     "country": "CR",
     "type": "daily",
-    "rank": 27,
-    "previousRank": 20,
+    "rank": 42,
+    "previousRank": 27,
     "peakRank": 1,
-    "appearances": 738,
-    "streams": "13757",
+    "appearances": 739,
+    "streams": "12012",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 7,
+    "rankChange": 15,
     "direction": "down",
     "entryStatus": "MOVED_DOWN"
   },
   {
     "country": "UY",
     "type": "daily",
-    "rank": 73,
-    "previousRank": 83,
+    "rank": 92,
+    "previousRank": 73,
     "peakRank": 10,
-    "appearances": 593,
-    "streams": "4895",
+    "appearances": 594,
+    "streams": "4131",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 10,
-    "direction": "up",
-    "entryStatus": "MOVED_UP"
+    "rankChange": 19,
+    "direction": "down",
+    "entryStatus": "MOVED_DOWN"
   },
   {
     "country": "VE",
@@ -107,8 +107,8 @@
     "rank": 2,
     "previousRank": 2,
     "peakRank": 1,
-    "appearances": 713,
-    "streams": "51866",
+    "appearances": 714,
+    "streams": "24769",
     "track": "Who",
     "artists": [
       "Jimin"
@@ -117,22 +117,5 @@
     "rankChange": 0,
     "direction": "=",
     "entryStatus": "NO_CHANGE"
-  },
-  {
-    "country": "VE",
-    "type": "daily",
-    "rank": 159,
-    "previousRank": -1,
-    "peakRank": 3,
-    "appearances": 190,
-    "streams": "5068",
-    "track": "Closer Than This",
-    "artists": [
-      "Jimin"
-    ],
-    "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 160,
-    "direction": "down",
-    "entryStatus": "RE_ENTRY"
   }
 ]
