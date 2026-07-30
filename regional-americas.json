@@ -22,8 +22,8 @@
     "rank": 1,
     "previousRank": 1,
     "peakRank": 1,
-    "appearances": 740,
-    "streams": "268371",
+    "appearances": 741,
+    "streams": "272847",
     "track": "Who",
     "artists": [
       "Jimin"
@@ -53,53 +53,53 @@
   {
     "country": "CR",
     "type": "daily",
-    "rank": 21,
-    "previousRank": 42,
+    "rank": 13,
+    "previousRank": 21,
     "peakRank": 1,
-    "appearances": 740,
-    "streams": "14348",
+    "appearances": 741,
+    "streams": "17238",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 21,
+    "rankChange": 8,
     "direction": "up",
     "entryStatus": "MOVED_UP"
   },
   {
     "country": "PY",
     "type": "daily",
-    "rank": 67,
-    "previousRank": -1,
+    "rank": 54,
+    "previousRank": 67,
     "peakRank": 1,
-    "appearances": 704,
-    "streams": "7182",
+    "appearances": 705,
+    "streams": "8439",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 68,
-    "direction": "down",
-    "entryStatus": "RE_ENTRY"
+    "rankChange": 13,
+    "direction": "up",
+    "entryStatus": "MOVED_UP"
   },
   {
     "country": "UY",
     "type": "daily",
-    "rank": 121,
-    "previousRank": 92,
+    "rank": 85,
+    "previousRank": 121,
     "peakRank": 10,
-    "appearances": 595,
-    "streams": "3686",
+    "appearances": 596,
+    "streams": "4627",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 29,
-    "direction": "down",
-    "entryStatus": "MOVED_DOWN"
+    "rankChange": 36,
+    "direction": "up",
+    "entryStatus": "MOVED_UP"
   },
   {
     "country": "VE",
@@ -124,8 +124,8 @@
     "rank": 2,
     "previousRank": 2,
     "peakRank": 1,
-    "appearances": 715,
-    "streams": "26601",
+    "appearances": 716,
+    "streams": "44456",
     "track": "Who",
     "artists": [
       "Jimin"
