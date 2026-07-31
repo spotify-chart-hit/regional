@@ -22,8 +22,8 @@
     "rank": 1,
     "previousRank": 1,
     "peakRank": 1,
-    "appearances": 741,
-    "streams": "272847",
+    "appearances": 742,
+    "streams": "268545",
     "track": "Who",
     "artists": [
       "Jimin"
@@ -53,51 +53,51 @@
   {
     "country": "CR",
     "type": "daily",
-    "rank": 13,
-    "previousRank": 21,
+    "rank": 16,
+    "previousRank": 13,
     "peakRank": 1,
-    "appearances": 741,
-    "streams": "17238",
+    "appearances": 742,
+    "streams": "16806",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 8,
-    "direction": "up",
-    "entryStatus": "MOVED_UP"
+    "rankChange": 3,
+    "direction": "down",
+    "entryStatus": "MOVED_DOWN"
   },
   {
     "country": "PY",
     "type": "daily",
-    "rank": 54,
-    "previousRank": 67,
+    "rank": 77,
+    "previousRank": 54,
     "peakRank": 1,
-    "appearances": 705,
-    "streams": "8439",
+    "appearances": 706,
+    "streams": "7095",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 13,
-    "direction": "up",
-    "entryStatus": "MOVED_UP"
+    "rankChange": 23,
+    "direction": "down",
+    "entryStatus": "MOVED_DOWN"
   },
   {
     "country": "UY",
     "type": "daily",
-    "rank": 85,
-    "previousRank": 121,
+    "rank": 63,
+    "previousRank": 85,
     "peakRank": 10,
-    "appearances": 596,
-    "streams": "4627",
+    "appearances": 597,
+    "streams": "5464",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 36,
+    "rankChange": 22,
     "direction": "up",
     "entryStatus": "MOVED_UP"
   },
@@ -124,8 +124,8 @@
     "rank": 2,
     "previousRank": 2,
     "peakRank": 1,
-    "appearances": 716,
-    "streams": "44456",
+    "appearances": 717,
+    "streams": "35224",
     "track": "Who",
     "artists": [
       "Jimin"
