@@ -91,8 +91,8 @@
     "rank": 1,
     "previousRank": 1,
     "peakRank": 1,
-    "appearances": 746,
-    "streams": "7568",
+    "appearances": 747,
+    "streams": "13100",
     "track": "Who",
     "artists": [
       "Jimin"
@@ -105,53 +105,53 @@
   {
     "country": "BY",
     "type": "daily",
-    "rank": 7,
-    "previousRank": 2,
+    "rank": 2,
+    "previousRank": 7,
     "peakRank": 2,
-    "appearances": 746,
-    "streams": "4229",
+    "appearances": 747,
+    "streams": "7379",
     "track": "Be Mine",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
     "rankChange": 5,
-    "direction": "down",
-    "entryStatus": "MOVED_DOWN"
+    "direction": "up",
+    "entryStatus": "MOVED_UP"
   },
   {
     "country": "BY",
     "type": "daily",
-    "rank": 47,
-    "previousRank": 12,
+    "rank": 13,
+    "previousRank": 47,
     "peakRank": 3,
-    "appearances": 713,
-    "streams": "2238",
+    "appearances": 714,
+    "streams": "3568",
     "track": "Like Crazy",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e022b46078245d0120690eb560d",
-    "rankChange": 35,
-    "direction": "down",
-    "entryStatus": "MOVED_DOWN"
+    "rankChange": 34,
+    "direction": "up",
+    "entryStatus": "MOVED_UP"
   },
   {
     "country": "BY",
     "type": "daily",
-    "rank": 75,
-    "previousRank": 15,
+    "rank": 18,
+    "previousRank": 75,
     "peakRank": 4,
-    "appearances": 550,
-    "streams": "1929",
+    "appearances": 551,
+    "streams": "3156",
     "track": "Rebirth (Intro)",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 60,
-    "direction": "down",
-    "entryStatus": "MOVED_DOWN"
+    "rankChange": 57,
+    "direction": "up",
+    "entryStatus": "MOVED_UP"
   },
   {
     "country": "CZ",
@@ -167,23 +167,6 @@
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
     "rankChange": 152,
-    "direction": "down",
-    "entryStatus": "RE_ENTRY"
-  },
-  {
-    "country": "CZ",
-    "type": "daily",
-    "rank": 175,
-    "previousRank": -1,
-    "peakRank": 1,
-    "appearances": 443,
-    "streams": "10405",
-    "track": "Who",
-    "artists": [
-      "Jimin"
-    ],
-    "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 176,
     "direction": "down",
     "entryStatus": "RE_ENTRY"
   }
