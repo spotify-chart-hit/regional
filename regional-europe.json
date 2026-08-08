@@ -88,69 +88,69 @@
   {
     "country": "BY",
     "type": "daily",
-    "rank": 3,
-    "previousRank": 1,
+    "rank": 1,
+    "previousRank": 3,
     "peakRank": 1,
-    "appearances": 749,
-    "streams": "5777",
+    "appearances": 750,
+    "streams": "9136",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
     "rankChange": 2,
-    "direction": "down",
-    "entryStatus": "MOVED_DOWN"
+    "direction": "up",
+    "entryStatus": "MOVED_UP"
   },
   {
     "country": "BY",
     "type": "daily",
-    "rank": 10,
-    "previousRank": 4,
+    "rank": 6,
+    "previousRank": 10,
     "peakRank": 2,
-    "appearances": 749,
-    "streams": "3701",
+    "appearances": 750,
+    "streams": "5240",
     "track": "Be Mine",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 6,
-    "direction": "down",
-    "entryStatus": "MOVED_DOWN"
+    "rankChange": 4,
+    "direction": "up",
+    "entryStatus": "MOVED_UP"
   },
   {
     "country": "BY",
     "type": "daily",
-    "rank": 78,
-    "previousRank": 26,
+    "rank": 42,
+    "previousRank": 78,
     "peakRank": 3,
-    "appearances": 716,
-    "streams": "1739",
+    "appearances": 717,
+    "streams": "2511",
     "track": "Like Crazy",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e022b46078245d0120690eb560d",
-    "rankChange": 52,
-    "direction": "down",
-    "entryStatus": "MOVED_DOWN"
+    "rankChange": 36,
+    "direction": "up",
+    "entryStatus": "MOVED_UP"
   },
   {
     "country": "BY",
     "type": "daily",
-    "rank": 121,
-    "previousRank": 31,
+    "rank": 57,
+    "previousRank": 121,
     "peakRank": 4,
-    "appearances": 553,
-    "streams": "1406",
+    "appearances": 554,
+    "streams": "2207",
     "track": "Rebirth (Intro)",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 90,
-    "direction": "down",
-    "entryStatus": "MOVED_DOWN"
+    "rankChange": 64,
+    "direction": "up",
+    "entryStatus": "MOVED_UP"
   }
 ]
