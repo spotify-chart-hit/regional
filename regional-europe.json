@@ -89,11 +89,28 @@
     "country": "BY",
     "type": "daily",
     "rank": 1,
-    "previousRank": 3,
+    "previousRank": 1,
     "peakRank": 1,
-    "appearances": 750,
-    "streams": "9136",
+    "appearances": 751,
+    "streams": "8918",
     "track": "Who",
+    "artists": [
+      "Jimin"
+    ],
+    "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
+    "rankChange": 0,
+    "direction": "=",
+    "entryStatus": "NO_CHANGE"
+  },
+  {
+    "country": "BY",
+    "type": "daily",
+    "rank": 4,
+    "previousRank": 6,
+    "peakRank": 2,
+    "appearances": 751,
+    "streams": "5711",
+    "track": "Be Mine",
     "artists": [
       "Jimin"
     ],
@@ -105,52 +122,121 @@
   {
     "country": "BY",
     "type": "daily",
-    "rank": 6,
-    "previousRank": 10,
-    "peakRank": 2,
-    "appearances": 750,
-    "streams": "5240",
-    "track": "Be Mine",
-    "artists": [
-      "Jimin"
-    ],
-    "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 4,
-    "direction": "up",
-    "entryStatus": "MOVED_UP"
-  },
-  {
-    "country": "BY",
-    "type": "daily",
-    "rank": 42,
-    "previousRank": 78,
+    "rank": 28,
+    "previousRank": 42,
     "peakRank": 3,
-    "appearances": 717,
-    "streams": "2511",
+    "appearances": 718,
+    "streams": "2725",
     "track": "Like Crazy",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e022b46078245d0120690eb560d",
-    "rankChange": 36,
+    "rankChange": 14,
     "direction": "up",
     "entryStatus": "MOVED_UP"
   },
   {
     "country": "BY",
     "type": "daily",
-    "rank": 57,
-    "previousRank": 121,
+    "rank": 48,
+    "previousRank": 57,
     "peakRank": 4,
-    "appearances": 554,
-    "streams": "2207",
+    "appearances": 555,
+    "streams": "2229",
     "track": "Rebirth (Intro)",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 64,
+    "rankChange": 9,
     "direction": "up",
     "entryStatus": "MOVED_UP"
+  },
+  {
+    "country": "BY",
+    "type": "daily",
+    "rank": 112,
+    "previousRank": -1,
+    "peakRank": 3,
+    "appearances": 555,
+    "streams": "1591",
+    "track": "Who (Rock Remix)",
+    "artists": [
+      "Jimin"
+    ],
+    "image": "https://i.scdn.co/image/ab67616d00001e02f150d9f2e5e8148e5032fd7d",
+    "rankChange": 113,
+    "direction": "down",
+    "entryStatus": "RE_ENTRY"
+  },
+  {
+    "country": "BY",
+    "type": "daily",
+    "rank": 134,
+    "previousRank": -1,
+    "peakRank": 5,
+    "appearances": 478,
+    "streams": "1475",
+    "track": "Slow Dance (feat. Sofia Carson)",
+    "artists": [
+      "Jimin",
+      "Sofia Carson"
+    ],
+    "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
+    "rankChange": 135,
+    "direction": "down",
+    "entryStatus": "RE_ENTRY"
+  },
+  {
+    "country": "BY",
+    "type": "daily",
+    "rank": 139,
+    "previousRank": -1,
+    "peakRank": 5,
+    "appearances": 492,
+    "streams": "1455",
+    "track": "Who (Shibuyakei Remix)",
+    "artists": [
+      "Jimin"
+    ],
+    "image": "https://i.scdn.co/image/ab67616d00001e0282601539d4a27061ad90eacb",
+    "rankChange": 140,
+    "direction": "down",
+    "entryStatus": "RE_ENTRY"
+  },
+  {
+    "country": "BY",
+    "type": "daily",
+    "rank": 171,
+    "previousRank": -1,
+    "peakRank": 8,
+    "appearances": 420,
+    "streams": "1315",
+    "track": "Who (Acoustic Remix)",
+    "artists": [
+      "Jimin"
+    ],
+    "image": "https://i.scdn.co/image/ab67616d00001e02f150d9f2e5e8148e5032fd7d",
+    "rankChange": 172,
+    "direction": "down",
+    "entryStatus": "RE_ENTRY"
+  },
+  {
+    "country": "CZ",
+    "type": "daily",
+    "rank": 113,
+    "previousRank": -1,
+    "peakRank": 1,
+    "appearances": 444,
+    "streams": "12180",
+    "track": "Who",
+    "artists": [
+      "Jimin"
+    ],
+    "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
+    "rankChange": 114,
+    "direction": "down",
+    "entryStatus": "RE_ENTRY"
   }
 ]
