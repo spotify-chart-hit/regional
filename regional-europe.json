@@ -5,8 +5,8 @@
     "rank": 1,
     "previousRank": 1,
     "peakRank": 1,
-    "appearances": 108,
-    "streams": "74659",
+    "appearances": 109,
+    "streams": "72403",
     "track": "Who",
     "artists": [
       "Jimin"
@@ -19,28 +19,28 @@
   {
     "country": "BY",
     "type": "weekly",
-    "rank": 3,
-    "previousRank": 4,
+    "rank": 5,
+    "previousRank": 3,
     "peakRank": 2,
-    "appearances": 108,
-    "streams": "46908",
+    "appearances": 109,
+    "streams": "43547",
     "track": "Be Mine",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 1,
-    "direction": "up",
-    "entryStatus": "MOVED_UP"
+    "rankChange": 2,
+    "direction": "down",
+    "entryStatus": "MOVED_DOWN"
   },
   {
     "country": "BY",
     "type": "weekly",
-    "rank": 19,
-    "previousRank": 20,
+    "rank": 18,
+    "previousRank": 19,
     "peakRank": 4,
-    "appearances": 103,
-    "streams": "22584",
+    "appearances": 104,
+    "streams": "22315",
     "track": "Like Crazy",
     "artists": [
       "Jimin"
@@ -53,54 +53,37 @@
   {
     "country": "BY",
     "type": "weekly",
-    "rank": 29,
-    "previousRank": 30,
+    "rank": 23,
+    "previousRank": 29,
     "peakRank": 6,
-    "appearances": 82,
-    "streams": "19324",
+    "appearances": 83,
+    "streams": "20151",
     "track": "Rebirth (Intro)",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 1,
+    "rankChange": 6,
     "direction": "up",
     "entryStatus": "MOVED_UP"
   },
   {
     "country": "BY",
     "type": "weekly",
-    "rank": 137,
-    "previousRank": 177,
+    "rank": 144,
+    "previousRank": 137,
     "peakRank": 7,
-    "appearances": 77,
-    "streams": "10109",
+    "appearances": 78,
+    "streams": "9976",
     "track": "Slow Dance (feat. Sofia Carson)",
     "artists": [
       "Jimin",
       "Sofia Carson"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 40,
-    "direction": "up",
-    "entryStatus": "MOVED_UP"
-  },
-  {
-    "country": "BY",
-    "type": "weekly",
-    "rank": 169,
-    "previousRank": -1,
-    "peakRank": 4,
-    "appearances": 81,
-    "streams": "9293",
-    "track": "Who (Rock Remix)",
-    "artists": [
-      "Jimin"
-    ],
-    "image": "https://i.scdn.co/image/ab67616d00001e02f150d9f2e5e8148e5032fd7d",
-    "rankChange": 170,
+    "rankChange": 7,
     "direction": "down",
-    "entryStatus": "RE_ENTRY"
+    "entryStatus": "MOVED_DOWN"
   },
   {
     "country": "BY",
@@ -108,8 +91,8 @@
     "rank": 1,
     "previousRank": 1,
     "peakRank": 1,
-    "appearances": 762,
-    "streams": "10187",
+    "appearances": 763,
+    "streams": "11281",
     "track": "Who",
     "artists": [
       "Jimin"
@@ -125,8 +108,8 @@
     "rank": 4,
     "previousRank": 4,
     "peakRank": 2,
-    "appearances": 762,
-    "streams": "6913",
+    "appearances": 763,
+    "streams": "6796",
     "track": "Be Mine",
     "artists": [
       "Jimin"
@@ -139,11 +122,11 @@
   {
     "country": "BY",
     "type": "daily",
-    "rank": 17,
-    "previousRank": 19,
+    "rank": 15,
+    "previousRank": 17,
     "peakRank": 3,
-    "appearances": 729,
-    "streams": "3365",
+    "appearances": 730,
+    "streams": "3601",
     "track": "Like Crazy",
     "artists": [
       "Jimin"
@@ -156,12 +139,64 @@
   {
     "country": "BY",
     "type": "daily",
-    "rank": 33,
-    "previousRank": 23,
+    "rank": 20,
+    "previousRank": 33,
     "peakRank": 4,
-    "appearances": 566,
-    "streams": "2732",
+    "appearances": 567,
+    "streams": "3284",
     "track": "Rebirth (Intro)",
+    "artists": [
+      "Jimin"
+    ],
+    "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
+    "rankChange": 13,
+    "direction": "up",
+    "entryStatus": "MOVED_UP"
+  },
+  {
+    "country": "BY",
+    "type": "daily",
+    "rank": 122,
+    "previousRank": 98,
+    "peakRank": 5,
+    "appearances": 487,
+    "streams": "1523",
+    "track": "Slow Dance (feat. Sofia Carson)",
+    "artists": [
+      "Jimin",
+      "Sofia Carson"
+    ],
+    "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
+    "rankChange": 24,
+    "direction": "down",
+    "entryStatus": "MOVED_DOWN"
+  },
+  {
+    "country": "CZ",
+    "type": "weekly",
+    "rank": 127,
+    "previousRank": 172,
+    "peakRank": 5,
+    "appearances": 64,
+    "streams": "83750",
+    "track": "Who",
+    "artists": [
+      "Jimin"
+    ],
+    "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
+    "rankChange": 45,
+    "direction": "up",
+    "entryStatus": "MOVED_UP"
+  },
+  {
+    "country": "CZ",
+    "type": "daily",
+    "rank": 128,
+    "previousRank": 118,
+    "peakRank": 1,
+    "appearances": 456,
+    "streams": "11736",
+    "track": "Who",
     "artists": [
       "Jimin"
     ],
@@ -169,91 +204,5 @@
     "rankChange": 10,
     "direction": "down",
     "entryStatus": "MOVED_DOWN"
-  },
-  {
-    "country": "BY",
-    "type": "daily",
-    "rank": 98,
-    "previousRank": -1,
-    "peakRank": 5,
-    "appearances": 486,
-    "streams": "1678",
-    "track": "Slow Dance (feat. Sofia Carson)",
-    "artists": [
-      "Jimin",
-      "Sofia Carson"
-    ],
-    "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 99,
-    "direction": "down",
-    "entryStatus": "RE_ENTRY"
-  },
-  {
-    "country": "BY",
-    "type": "daily",
-    "rank": 181,
-    "previousRank": -1,
-    "peakRank": 3,
-    "appearances": 562,
-    "streams": "1311",
-    "track": "Who (Rock Remix)",
-    "artists": [
-      "Jimin"
-    ],
-    "image": "https://i.scdn.co/image/ab67616d00001e02f150d9f2e5e8148e5032fd7d",
-    "rankChange": 182,
-    "direction": "down",
-    "entryStatus": "RE_ENTRY"
-  },
-  {
-    "country": "BG",
-    "type": "weekly",
-    "rank": 125,
-    "previousRank": -1,
-    "peakRank": 1,
-    "appearances": 104,
-    "streams": "18246",
-    "track": "Who",
-    "artists": [
-      "Jimin"
-    ],
-    "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 126,
-    "direction": "down",
-    "entryStatus": "RE_ENTRY"
-  },
-  {
-    "country": "CZ",
-    "type": "weekly",
-    "rank": 172,
-    "previousRank": -1,
-    "peakRank": 5,
-    "appearances": 63,
-    "streams": "72035",
-    "track": "Who",
-    "artists": [
-      "Jimin"
-    ],
-    "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 173,
-    "direction": "down",
-    "entryStatus": "RE_ENTRY"
-  },
-  {
-    "country": "CZ",
-    "type": "daily",
-    "rank": 118,
-    "previousRank": 139,
-    "peakRank": 1,
-    "appearances": 455,
-    "streams": "12319",
-    "track": "Who",
-    "artists": [
-      "Jimin"
-    ],
-    "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 21,
-    "direction": "up",
-    "entryStatus": "MOVED_UP"
   }
 ]
