@@ -22,8 +22,8 @@
     "rank": 1,
     "previousRank": 1,
     "peakRank": 1,
-    "appearances": 765,
-    "streams": "198439",
+    "appearances": 766,
+    "streams": "238553",
     "track": "Who",
     "artists": [
       "Jimin"
@@ -53,19 +53,19 @@
   {
     "country": "CR",
     "type": "daily",
-    "rank": 62,
-    "previousRank": 49,
+    "rank": 29,
+    "previousRank": 62,
     "peakRank": 1,
-    "appearances": 765,
-    "streams": "11835",
+    "appearances": 766,
+    "streams": "13197",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 13,
-    "direction": "down",
-    "entryStatus": "MOVED_DOWN"
+    "rankChange": 33,
+    "direction": "up",
+    "entryStatus": "MOVED_UP"
   },
   {
     "country": "PY",
@@ -139,18 +139,36 @@
   {
     "country": "VE",
     "type": "daily",
-    "rank": 4,
-    "previousRank": 2,
+    "rank": 2,
+    "previousRank": 4,
     "peakRank": 1,
-    "appearances": 740,
-    "streams": "22323",
+    "appearances": 741,
+    "streams": "34313",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
     "rankChange": 2,
+    "direction": "up",
+    "entryStatus": "MOVED_UP"
+  },
+  {
+    "country": "VE",
+    "type": "daily",
+    "rank": 67,
+    "previousRank": -1,
+    "peakRank": 4,
+    "appearances": 186,
+    "streams": "6824",
+    "track": "Slow Dance (feat. Sofia Carson)",
+    "artists": [
+      "Jimin",
+      "Sofia Carson"
+    ],
+    "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
+    "rankChange": 68,
     "direction": "down",
-    "entryStatus": "MOVED_DOWN"
+    "entryStatus": "RE_ENTRY"
   }
 ]
