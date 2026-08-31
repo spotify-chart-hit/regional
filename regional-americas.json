@@ -22,8 +22,8 @@
     "rank": 1,
     "previousRank": 1,
     "peakRank": 1,
-    "appearances": 772,
-    "streams": "238421",
+    "appearances": 773,
+    "streams": "232655",
     "track": "Who",
     "artists": [
       "Jimin"
@@ -53,17 +53,17 @@
   {
     "country": "CR",
     "type": "daily",
-    "rank": 74,
-    "previousRank": 90,
+    "rank": 32,
+    "previousRank": 74,
     "peakRank": 1,
-    "appearances": 772,
-    "streams": "10646",
+    "appearances": 773,
+    "streams": "13305",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 16,
+    "rankChange": 42,
     "direction": "up",
     "entryStatus": "MOVED_UP"
   },
@@ -87,17 +87,17 @@
   {
     "country": "PY",
     "type": "daily",
-    "rank": 131,
-    "previousRank": 144,
+    "rank": 46,
+    "previousRank": 131,
     "peakRank": 1,
-    "appearances": 733,
-    "streams": "6217",
+    "appearances": 734,
+    "streams": "8575",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 13,
+    "rankChange": 85,
     "direction": "up",
     "entryStatus": "MOVED_UP"
   },
@@ -121,17 +121,17 @@
   {
     "country": "UY",
     "type": "daily",
-    "rank": 42,
-    "previousRank": 47,
+    "rank": 33,
+    "previousRank": 42,
     "peakRank": 10,
-    "appearances": 624,
-    "streams": "7352",
+    "appearances": 625,
+    "streams": "7292",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 5,
+    "rankChange": 9,
     "direction": "up",
     "entryStatus": "MOVED_UP"
   },
@@ -156,34 +156,34 @@
     "country": "VE",
     "type": "daily",
     "rank": 4,
-    "previousRank": 5,
+    "previousRank": 4,
     "peakRank": 1,
-    "appearances": 747,
-    "streams": "20474",
+    "appearances": 748,
+    "streams": "21713",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 1,
-    "direction": "up",
-    "entryStatus": "MOVED_UP"
+    "rankChange": 0,
+    "direction": "=",
+    "entryStatus": "NO_CHANGE"
   },
   {
     "country": "VE",
     "type": "daily",
-    "rank": 135,
-    "previousRank": 101,
+    "rank": 139,
+    "previousRank": 135,
     "peakRank": 4,
-    "appearances": 189,
-    "streams": "5469",
+    "appearances": 190,
+    "streams": "4793",
     "track": "Slow Dance (feat. Sofia Carson)",
     "artists": [
       "Jimin",
       "Sofia Carson"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 34,
+    "rankChange": 4,
     "direction": "down",
     "entryStatus": "MOVED_DOWN"
   }
