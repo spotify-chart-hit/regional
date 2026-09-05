@@ -87,11 +87,11 @@
   {
     "country": "BY",
     "type": "daily",
-    "rank": 2,
-    "previousRank": 3,
+    "rank": 1,
+    "previousRank": 2,
     "peakRank": 1,
-    "appearances": 777,
-    "streams": "9799",
+    "appearances": 778,
+    "streams": "11179",
     "track": "Who",
     "artists": [
       "Jimin"
@@ -107,8 +107,8 @@
     "rank": 5,
     "previousRank": 5,
     "peakRank": 2,
-    "appearances": 777,
-    "streams": "6417",
+    "appearances": 778,
+    "streams": "6879",
     "track": "Be Mine",
     "artists": [
       "Jimin"
@@ -121,87 +121,87 @@
   {
     "country": "BY",
     "type": "daily",
-    "rank": 27,
-    "previousRank": 68,
+    "rank": 30,
+    "previousRank": 27,
     "peakRank": 3,
-    "appearances": 744,
-    "streams": "2650",
+    "appearances": 745,
+    "streams": "2832",
     "track": "Like Crazy",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e022b46078245d0120690eb560d",
-    "rankChange": 41,
-    "direction": "up",
-    "entryStatus": "MOVED_UP"
+    "rankChange": 3,
+    "direction": "down",
+    "entryStatus": "MOVED_DOWN"
   },
   {
     "country": "BY",
     "type": "daily",
-    "rank": 44,
-    "previousRank": 88,
+    "rank": 50,
+    "previousRank": 44,
     "peakRank": 4,
-    "appearances": 581,
-    "streams": "2159",
+    "appearances": 582,
+    "streams": "2402",
     "track": "Rebirth (Intro)",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 44,
-    "direction": "up",
-    "entryStatus": "MOVED_UP"
+    "rankChange": 6,
+    "direction": "down",
+    "entryStatus": "MOVED_DOWN"
   },
   {
     "country": "BY",
     "type": "daily",
-    "rank": 55,
-    "previousRank": 119,
+    "rank": 109,
+    "previousRank": 55,
     "peakRank": 3,
-    "appearances": 567,
-    "streams": "1990",
+    "appearances": 568,
+    "streams": "1727",
     "track": "Who - Rock Remix",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f150d9f2e5e8148e5032fd7d",
-    "rankChange": 64,
-    "direction": "up",
-    "entryStatus": "MOVED_UP"
-  },
-  {
-    "country": "BY",
-    "type": "daily",
-    "rank": 96,
-    "previousRank": -1,
-    "peakRank": 5,
-    "appearances": 496,
-    "streams": "1593",
-    "track": "Who - Shibuyakei Remix",
-    "artists": [
-      "Jimin"
-    ],
-    "image": "https://i.scdn.co/image/ab67616d00001e0282601539d4a27061ad90eacb",
-    "rankChange": 97,
+    "rankChange": 54,
     "direction": "down",
-    "entryStatus": "RE_ENTRY"
+    "entryStatus": "MOVED_DOWN"
   },
   {
     "country": "BY",
     "type": "daily",
-    "rank": 122,
-    "previousRank": -1,
+    "rank": 145,
+    "previousRank": 122,
     "peakRank": 8,
-    "appearances": 423,
-    "streams": "1431",
+    "appearances": 424,
+    "streams": "1495",
     "track": "Who - Acoustic Remix",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f150d9f2e5e8148e5032fd7d",
-    "rankChange": 123,
+    "rankChange": 23,
     "direction": "down",
-    "entryStatus": "RE_ENTRY"
+    "entryStatus": "MOVED_DOWN"
+  },
+  {
+    "country": "BY",
+    "type": "daily",
+    "rank": 171,
+    "previousRank": 96,
+    "peakRank": 5,
+    "appearances": 497,
+    "streams": "1416",
+    "track": "Who - Shibuyakei Remix",
+    "artists": [
+      "Jimin"
+    ],
+    "image": "https://i.scdn.co/image/ab67616d00001e0282601539d4a27061ad90eacb",
+    "rankChange": 75,
+    "direction": "down",
+    "entryStatus": "MOVED_DOWN"
   },
   {
     "country": "CZ",
@@ -223,18 +223,18 @@
   {
     "country": "CZ",
     "type": "daily",
-    "rank": 139,
-    "previousRank": 147,
+    "rank": 161,
+    "previousRank": 139,
     "peakRank": 1,
-    "appearances": 468,
-    "streams": "11628",
+    "appearances": 469,
+    "streams": "12409",
     "track": "Who",
     "artists": [
       "Jimin"
     ],
     "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-    "rankChange": 8,
-    "direction": "up",
-    "entryStatus": "MOVED_UP"
+    "rankChange": 22,
+    "direction": "down",
+    "entryStatus": "MOVED_DOWN"
   }
 ]
